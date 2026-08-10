@@ -9,6 +9,11 @@ build/
 !pubspec.lock
 !web/icons/
 
+# Android local machine paths / signing
+**/android/**/local.properties
+**/android/**/key.properties
+**/android/**/*.keystore
+
 # Local tooling (project-local Flutter SDK + pub cache)
 .tooling/
 .tooling_dl.out
@@ -37,3 +42,5 @@ local_data/
 .testlog.txt
 .pubget.log
 .extract.log
+
+.apkbuild.log
