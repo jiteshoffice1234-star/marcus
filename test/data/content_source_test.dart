@@ -1,5 +1,4 @@
 import 'package:accounting_academy/data/datasources/content_datasource.dart';
-import 'package:accounting_academy/data/models/curriculum.dart';
 import 'package:accounting_academy/data/models/question.dart';
 import 'package:accounting_academy/data/models/test_definition.dart';
 import 'package:flutter_test/flutter_test.dart';
