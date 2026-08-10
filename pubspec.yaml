@@ -1,0 +1,52 @@
+name: accounting_academy
+description: "MARCUS — a production-quality accounting education platform: learn, practice, test, analyze, revise and master."
+publish_to: 'none'
+
+# The display name of the app is NOT defined here. See lib/core/config/app_config.dart
+# (central, single-source branding) — change the app name there and in the platform
+# launchers (android/app/src/main/AndroidManifest.xml, ios/Runner/Info.plist, web/manifest.json).
+version: 0.1.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+
+  # State management
+  flutter_riverpod: ^2.6.1
+
+  # Navigation
+  go_router: ^16.2.4
+
+  # Backend
+  supabase_flutter: ^2.10.1
+  http: ^1.2.2
+
+  # Local persistence / offline
+  shared_preferences: ^2.5.3
+  connectivity_plus: ^6.1.4
+
+  # Exact decimal arithmetic for money — never use double for accounting math
+  decimal: ^3.2.1
+
+  # IDs for offline-first local records
+  uuid: ^4.5.1
+
+  # Formatting
+  intl: ^0.20.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/data/
+    - assets/branding/icon/

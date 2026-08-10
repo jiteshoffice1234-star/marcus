@@ -1,0 +1,58 @@
+{
+  "levels": [
+    {
+      "id": "level_1",
+      "slug": "accounting-foundation",
+      "title": "Accounting Foundation",
+      "subtitle": "From zero to confident basics",
+      "description": "Accounting terminology, concepts, the accounting equation, journal entries, ledgers, trial balance, cash & bank, and final accounts.",
+      "levelIndex": 1,
+      "accentColor": "#2E7D32",
+      "icon": "foundation",
+      "dataFile": "assets/data/level_1.json"
+    },
+    {
+      "id": "level_2",
+      "slug": "professional-accounting",
+      "title": "Professional Accounting",
+      "subtitle": "Practical, workplace accounting",
+      "description": "Receivables, payables, inventory, fixed assets, depreciation, accruals, prepayments, provisions, bad debts, payroll, GST & TDS concepts, month-end closing, financial statements, cash flow basics, controls and MIS.",
+      "levelIndex": 2,
+      "accentColor": "#1565C0",
+      "icon": "professional",
+      "dataFile": "assets/data/level_2.json"
+    },
+    {
+      "id": "level_3",
+      "slug": "advanced-accounting",
+      "title": "Advanced Accounting",
+      "subtitle": "Company, partnership, consolidation",
+      "description": "Company accounts, partnership accounts, branch and departmental accounts, consolidated financial statements, business combinations, cash-flow statements, financial statement analysis, accounting standards and Ind AS concepts.",
+      "levelIndex": 3,
+      "accentColor": "#6A1B9A",
+      "icon": "advanced",
+      "dataFile": "assets/data/level_3.json"
+    },
+    {
+      "id": "level_4",
+      "slug": "ca-final",
+      "title": "CA Final Level",
+      "subtitle": "Advanced financial reporting & exam practice",
+      "description": "Advanced financial reporting, Ind AS, complex accounting adjustments, consolidation, business combinations, integrated case studies, advanced numerical problems, exam-style questions and mock examinations.",
+      "levelIndex": 4,
+      "accentColor": "#C62828",
+      "icon": "ca_final",
+      "dataFile": "assets/data/level_4.json"
+    }
+  ],
+  "ranks": [
+    { "key": "beginner", "title": "Accounting Beginner", "minXp": 0 },
+    { "key": "bookkeeper", "title": "Bookkeeper", "minXp": 500 },
+    { "key": "accountant", "title": "Accountant", "minXp": 1500 },
+    { "key": "senior_accountant", "title": "Senior Accountant", "minXp": 3500 },
+    { "key": "reporting_specialist", "title": "Financial Reporting Specialist", "minXp": 6500 },
+    { "key": "ca_aspirant", "title": "CA Aspirant", "minXp": 10000 },
+    { "key": "ca_final_master", "title": "CA Final Master", "minXp": 16000 }
+  ],
+  "disclaimer": "This application provides accounting education and CA-level learning content. It is not affiliated with the Institute of Chartered Accountants of India (ICAI) and does not confer any professional qualification. Completing this course does not make anyone a Chartered Accountant. Official ICAI syllabus and qualification requirements are separate from this app's learning content and must be satisfied through ICAI's own processes."
+}

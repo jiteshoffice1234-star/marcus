@@ -1,0 +1,855 @@
+{
+  "levelId": "level_2",
+  "subjects": [
+    {
+      "id": "l2_prof",
+      "slug": "professional-accounting",
+      "title": "Professional Accounting",
+      "description": "Practical, workplace accounting: working capital, non-current assets, period-end accounting, statutory concepts, reporting and controls.",
+      "chapters": [
+        {
+          "id": "l2_prof_ch1",
+          "slug": "working-capital-accounts",
+          "title": "Working Capital Accounts",
+          "description": "Receivables, payables and inventory.",
+          "topics": [
+            {
+              "id": "l2_prof_ch1_t1",
+              "slug": "receivables-payables",
+              "title": "Receivables & Payables",
+              "description": "Managing money owed in and out.",
+              "lesson": {
+                "id": "l2_prof_ch1_t1_lesson",
+                "title": "Debtors, Creditors and Credit Terms",
+                "summary": "Trade receivables, trade payables, ageing, and why credit terms matter.",
+                "estimatedMinutes": 8,
+                "sections": [
+                  { "type": "concept", "heading": "Receivables", "body": "Trade receivables (debtors) are customers who owe money for goods or services sold on credit. They are current assets. Key management tools: ageing analysis, credit limits, and collection follow-up." },
+                  { "type": "concept", "heading": "Payables", "body": "Trade payables (creditors) are suppliers the business owes. They are current liabilities. Managing payables well means paying on time to keep credit terms, without tying up unnecessary cash." },
+                  { "type": "example", "heading": "Example", "body": "Sold goods ₹50,000 on 30-day terms: debit debtor ₹50,000, credit sales ₹50,000. If the customer pays in 45 days, the receivable is overdue — flagged by the ageing report." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Record the credit sale (debtor/sales). 2. On payment: debit bank, credit debtor. 3. Run an ageing report: current, 30-60, 60-90, 90+ days. 4. Chase overdue accounts and consider provisions for doubtful debts." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Recording a credit sale as cash. Forgetting that receiving payment clears the debtor — it is not new income." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_recpay_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "A customer who owes ₹30,000 pays in full by cheque. What is the entry?",
+                  "options": [
+                    { "key": "A", "text": "Debit customer A/c ₹30,000; Credit Bank ₹30,000" },
+                    { "key": "B", "text": "Debit Bank ₹30,000; Credit Customer A/c ₹30,000" },
+                    { "key": "C", "text": "Debit Sales ₹30,000; Credit Bank ₹30,000" },
+                    { "key": "D", "text": "Debit Bank ₹30,000; Credit Sales ₹30,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Bank (asset) increases → debit. The customer's receivable is settled → credit the customer's account. This is collection, not a new sale.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That would reduce bank and create a receivable — the opposite." },
+                    { "key": "C", "why": "Sales were recorded when the goods were sold, not on collection." },
+                    { "key": "D", "why": "Crediting sales would double-count the income." }
+                  ],
+                  "commonMistake": "Crediting sales again on collection.",
+                  "hint": "What account did the credit sale create?",
+                  "tags": ["receivables"],
+                  "skills": ["journal"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l2_q_recpay_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Where do trade receivables appear in the balance sheet?",
+                  "options": [
+                    { "key": "A", "text": "Current liabilities" },
+                    { "key": "B", "text": "Current assets" },
+                    { "key": "C", "text": "Non-current assets" },
+                    { "key": "D", "text": "Capital" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Trade receivables are amounts owed to the business, expected within the operating cycle — a current asset.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Liabilities are amounts the business owes." },
+                    { "key": "C", "why": "Receivables convert to cash within a year." },
+                    { "key": "D", "why": "Capital is the owner's claim." }
+                  ],
+                  "commonMistake": "Mixing up who owes whom.",
+                  "hint": "Debtors owe the business money.",
+                  "tags": ["receivables", "balance-sheet"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch1_t2",
+              "slug": "inventory",
+              "title": "Inventory",
+              "description": "Valuing and tracking stock.",
+              "lesson": {
+                "id": "l2_prof_ch1_t2_lesson",
+                "title": "Inventory Accounting",
+                "summary": "FIFO vs weighted average, perpetual vs periodic, and the lower of cost or net realisable value.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "Valuation methods", "body": "FIFO (first-in, first-out) assumes the oldest stock is sold first — ending inventory reflects recent costs. Weighted average smooths cost fluctuations. The method chosen must be applied consistently." },
+                  { "type": "concept", "heading": "Perpetual vs periodic", "body": "Perpetual systems update inventory with every purchase and sale. Periodic systems count stock at period end and compute usage. Perpetual gives better control but needs more effort." },
+                  { "type": "concept", "heading": "Valuation principle", "body": "Inventory is valued at the lower of cost and net realisable value (NRV). If stock can no longer be sold at cost, it must be written down — prudence." },
+                  { "type": "example", "heading": "Example", "body": "Bought 100 units at ₹10, then 100 units at ₹12. Sold 120 units. Under FIFO, the 80 units left are valued at ₹12 = ₹960. Under weighted average (₹11), they are ₹880." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Track purchases (100@10, 100@12). 2. FIFO: first 100 units sold from the ₹10 batch, next 20 from the ₹12 batch. 3. Remaining 80 units are all from the ₹12 batch: 80 × 12 = 960. 4. Compare with NRV; value at the lower figure." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Using LIFO where it is not permitted. Forgetting to write down damaged or obsolete stock to NRV. Switching methods mid-year without reason." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_inventory_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "A business buys 50 units at ₹100 each and later 50 units at ₹120 each. It sells 60 units. Under FIFO, what is the value of closing inventory (in ₹)?",
+                  "answer": { "value": "4800", "accepted": ["4800", "4,800", "4800.00"] },
+                  "explanation": "Sold 60 units: all 50 from the ₹100 batch + 10 from the ₹120 batch. Remaining 40 units × ₹120 = ₹4,800.",
+                  "commonMistake": "Valuing the remaining units at the older price.",
+                  "hint": "FIFO: the units left are the most recently purchased.",
+                  "tags": ["inventory", "fifo"],
+                  "skills": ["inventory"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 120
+                },
+                {
+                  "id": "l2_q_inventory_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Inventory cost is ₹10,000 but its net realisable value is ₹8,500. At what value is it reported?",
+                  "options": [
+                    { "key": "A", "text": "₹10,000" },
+                    { "key": "B", "text": "₹8,500" },
+                    { "key": "C", "text": "₹9,250" },
+                    { "key": "D", "text": "₹18,500" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Inventory is valued at the lower of cost and net realisable value: 8,500. The write-down of 1,500 is recognised immediately.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Cost exceeds NRV, so it must be written down." },
+                    { "key": "C", "why": "There is no averaging — it is the lower of the two." },
+                    { "key": "D", "why": "That is the sum, which is meaningless here." }
+                  ],
+                  "commonMistake": "Valuing at cost without checking NRV.",
+                  "hint": "Which is lower: cost or what it can be sold for?",
+                  "tags": ["inventory", "nrv"],
+                  "skills": ["inventory"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l2_prof_ch2",
+          "slug": "non-current-assets",
+          "title": "Non-current Assets",
+          "description": "Fixed assets and depreciation.",
+          "topics": [
+            {
+              "id": "l2_prof_ch2_t1",
+              "slug": "fixed-assets-depreciation",
+              "title": "Fixed Assets & Depreciation",
+              "description": "Spreading an asset's cost over its useful life.",
+              "lesson": {
+                "id": "l2_prof_ch2_t1_lesson",
+                "title": "Depreciation Methods",
+                "summary": "Straight line and reducing balance, and the journal entries for depreciation.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "What is depreciation?", "body": "Depreciation allocates the cost of a fixed asset over its useful life. It matches the asset's cost to the periods that benefit from it (matching principle) and reflects wear, tear and obsolescence." },
+                  { "type": "concept", "heading": "Straight line", "body": "Same charge every year: (Cost - Residual Value) / Useful Life. Simple and predictable." },
+                  { "type": "concept", "heading": "Reducing balance", "body": "A fixed percentage of the written-down value each year. Higher charges early, lower later — closer to the real pattern of many assets." },
+                  { "type": "formula", "heading": "Straight line", "body": "Depreciation = (Cost - Residual Value) / Useful Life", "formula": "D = (C - R) / n" },
+                  { "type": "example", "heading": "Example", "body": "Machine cost ₹1,00,000, residual value ₹10,000, life 5 years. Straight line: (1,00,000 - 10,000) / 5 = ₹18,000 per year." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Compute annual depreciation: 18,000. 2. Entry: Debit Depreciation Expense 18,000; Credit Accumulated Depreciation 18,000. 3. Net book value after year 1 = 1,00,000 - 18,000 = 82,000." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Crediting the asset account directly instead of accumulated depreciation. Forgetting residual value in straight line. Depreciating land (which usually does not depreciate)." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_dep_1",
+                  "type": "numerical",
+                  "difficulty": "easy",
+                  "stem": "Equipment costs ₹2,00,000, residual value ₹20,000, useful life 5 years. Straight-line depreciation per year (in ₹)?",
+                  "answer": { "value": "36000", "accepted": ["36000", "36,000", "36000.00"] },
+                  "explanation": "(2,00,000 - 20,000) / 5 = 1,80,000 / 5 = 36,000 per year.",
+                  "commonMistake": "Depreciating the full cost including residual value.",
+                  "hint": "Subtract the residual value first.",
+                  "tags": ["depreciation"],
+                  "skills": ["depreciation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                },
+                {
+                  "id": "l2_q_dep_2",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "A machine costing ₹1,00,000 is depreciated at 20% reducing balance. What is the depreciation in year 2?",
+                  "options": [
+                    { "key": "A", "text": "₹20,000" },
+                    { "key": "B", "text": "₹16,000" },
+                    { "key": "C", "text": "₹18,000" },
+                    { "key": "D", "text": "₹12,800" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Year 1: 20% × 1,00,000 = 20,000; book value 80,000. Year 2: 20% × 80,000 = 16,000.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That is year 1, on the full cost." },
+                    { "key": "C", "why": "That is straight line on 90,000 — not the method used." },
+                    { "key": "D", "why": "That is year 3 (20% × 64,000)." }
+                  ],
+                  "commonMistake": "Applying the percentage to original cost every year.",
+                  "hint": "Reducing balance applies to the written-down value.",
+                  "tags": ["depreciation"],
+                  "skills": ["depreciation"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                },
+                {
+                  "id": "l2_q_dep_3",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "The double entry for annual depreciation is:",
+                  "options": [
+                    { "key": "A", "text": "Debit Accumulated Depreciation; Credit Depreciation Expense" },
+                    { "key": "B", "text": "Debit Depreciation Expense; Credit Accumulated Depreciation" },
+                    { "key": "C", "text": "Debit Asset A/c; Credit Bank A/c" },
+                    { "key": "D", "text": "Debit Depreciation Expense; Credit Asset A/c" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Depreciation is an expense (debit) and the contra-asset Accumulated Depreciation grows on the credit side.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That reverses the entry." },
+                    { "key": "C", "why": "No cash moves when depreciation is booked." },
+                    { "key": "D", "why": "Crediting the asset directly is possible but using accumulated depreciation is the standard, cleaner practice." }
+                  ],
+                  "commonMistake": "Crediting the asset account directly instead of accumulated depreciation.",
+                  "hint": "Expense up (debit); the accumulated provision grows (credit).",
+                  "tags": ["depreciation", "journal"],
+                  "skills": ["depreciation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l2_prof_ch3",
+          "slug": "period-end-accounting",
+          "title": "Period-end Accounting",
+          "description": "Accruals, prepayments, provisions and bad debts.",
+          "topics": [
+            {
+              "id": "l2_prof_ch3_t1",
+              "slug": "accruals-prepayments",
+              "title": "Accruals & Prepayments",
+              "description": "Matching costs to the right period.",
+              "lesson": {
+                "id": "l2_prof_ch3_t1_lesson",
+                "title": "Accruals and Prepayments in Practice",
+                "summary": "The journal entries and presentation of accrued and prepaid items.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "Accruals", "body": "Expenses incurred in the period but not yet paid (e.g., salaries for the last week of March paid in April). Entry at year end: Debit the expense; Credit Accrued Expenses (a liability)." },
+                  { "type": "concept", "heading": "Prepayments", "body": "Expenses paid in advance (e.g., insurance covering next year). Entry at year end: Debit Prepaid Expenses (an asset); Credit the expense account." },
+                  { "type": "concept", "heading": "Reversal", "body": "In the next period the accrual is reversed (or settled), so the new year's P&L only shows that year's costs." },
+                  { "type": "example", "heading": "Example", "body": "Electricity paid ₹60,000; ₹12,000 is outstanding for the last quarter. P&L shows ₹72,000; balance sheet shows accrued electricity ₹12,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Add the outstanding amount to the expense (60,000 + 12,000 = 72,000). 2. Credit accrued expenses 12,000. 3. When paid next year: Debit accrued expenses; Credit bank — no P&L impact next year." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Putting the accrued expense on the asset side. Forgetting to add it to the P&L figure. Not reversing the accrual when paid." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_accrual_1",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "Salaries paid ₹4,80,000; salaries outstanding ₹40,000. What is the year-end adjustment entry?",
+                  "options": [
+                    { "key": "A", "text": "Debit Salaries ₹40,000; Credit Salaries Outstanding ₹40,000" },
+                    { "key": "B", "text": "Debit Salaries Outstanding ₹40,000; Credit Salaries ₹40,000" },
+                    { "key": "C", "text": "Debit Salaries ₹4,80,000; Credit Bank ₹4,80,000" },
+                    { "key": "D", "text": "Debit Bank ₹40,000; Credit Salaries ₹40,000" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "The outstanding salaries belong to this year: debit the expense, credit the liability. The P&L now shows 5,20,000.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "That would reduce the expense and create a debit balance — wrong direction." },
+                    { "key": "C", "why": "That records only what was paid, missing the outstanding amount." },
+                    { "key": "D", "why": "Bank is not receiving money here." }
+                  ],
+                  "commonMistake": "Forgetting the adjustment entry and only charging what was paid.",
+                  "hint": "What belongs to this year but is still unpaid?",
+                  "tags": ["accruals"],
+                  "skills": ["adjustments"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                },
+                {
+                  "id": "l2_q_accrual_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Prepaid expenses appear on which side of the balance sheet?",
+                  "options": [
+                    { "key": "A", "text": "Assets" },
+                    { "key": "B", "text": "Liabilities" },
+                    { "key": "C", "text": "Capital" },
+                    { "key": "D", "text": "Not shown in the balance sheet" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "A prepayment is a benefit already paid for — the business still holds the right to that benefit, so it is a current asset.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Nothing is owed; the benefit is owed to the business." },
+                    { "key": "C", "why": "It is not an owner's claim." },
+                    { "key": "D", "why": "Prepayments must be shown as assets." }
+                  ],
+                  "commonMistake": "Showing prepayments as liabilities.",
+                  "hint": "Who holds the benefit?",
+                  "tags": ["accruals"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch3_t2",
+              "slug": "provisions-bad-debts",
+              "title": "Provisions & Bad Debts",
+              "description": "Prudent recognition of losses.",
+              "lesson": {
+                "id": "l2_prof_ch3_t2_lesson",
+                "title": "Bad Debts and Provisions",
+                "summary": "Writing off bad debts, the provision for doubtful debts, and the P&L impact.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "Bad debts", "body": "When a customer will not pay, the amount is written off: Debit Bad Debts (expense); Credit the customer's account. The receivable disappears from the balance sheet." },
+                  { "type": "concept", "heading": "Provision for doubtful debts", "body": "Prudence requires estimating the portion of remaining receivables that may fail — even before specific debts are known. Entry: Debit Provision Expense; Credit Provision for Doubtful Debts (contra-asset)." },
+                  { "type": "concept", "heading": "Presentation", "body": "In the balance sheet, receivables are shown net of the provision. In the P&L, bad debts plus the change in provision are expenses." },
+                  { "type": "example", "heading": "Example", "body": "Receivables ₹2,00,000; a debtor of ₹10,000 is bankrupt → write off. Remaining ₹1,90,000; provision at 5% = ₹9,500. Net receivables = 1,90,000 - 9,500 = 1,80,500." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Write off the bankrupt debtor: debit bad debts 10,000, credit debtor 10,000. 2. Compute provision on the balance: 5% × 1,90,000 = 9,500. 3. Expense the provision; show receivables net of it. 4. Total P&L charge: 10,000 + 9,500 = 19,500." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Crediting the bad debt to the provision account instead of the customer. Computing the provision on receivables including amounts already written off. Forgetting that only the change in provision is an expense in later years." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_baddebt_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "A debtor of ₹15,000 is declared bankrupt and the amount is written off. The entry is:",
+                  "options": [
+                    { "key": "A", "text": "Debit Debtor A/c; Credit Bad Debts A/c" },
+                    { "key": "B", "text": "Debit Bad Debts A/c; Credit Debtor A/c" },
+                    { "key": "C", "text": "Debit Bad Debts A/c; Credit Provision A/c" },
+                    { "key": "D", "text": "Debit Provision A/c; Credit Debtor A/c" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Bad debts is an expense (debit) and the specific receivable is eliminated (credit the debtor).",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That creates a receivable and credits an expense — reversed." },
+                    { "key": "C", "why": "The provision covers estimates, not a known bad debt being written off." },
+                    { "key": "D", "why": "The provision account is not used to write off a specific known debt in this treatment." }
+                  ],
+                  "commonMistake": "Writing off through the provision instead of the debtor's account.",
+                  "hint": "Which account holds the amount owed?",
+                  "tags": ["bad-debts"],
+                  "skills": ["adjustments"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l2_q_baddebt_2",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Receivables are ₹5,00,000. A provision of 4% for doubtful debts is required. What is the provision amount (in ₹)?",
+                  "answer": { "value": "20000", "accepted": ["20000", "20,000", "20000.00"] },
+                  "explanation": "4% × 5,00,000 = 20,000.",
+                  "commonMistake": "Using the wrong percentage or including written-off debts.",
+                  "hint": "4% of the receivables balance.",
+                  "tags": ["bad-debts", "provisions"],
+                  "skills": ["adjustments"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l2_prof_ch4",
+          "slug": "payroll-statutory",
+          "title": "Payroll & Statutory Concepts",
+          "description": "Payroll accounting, GST and TDS.",
+          "topics": [
+            {
+              "id": "l2_prof_ch4_t1",
+              "slug": "payroll-accounting",
+              "title": "Payroll Accounting",
+              "description": "Salaries, deductions and statutory payments.",
+              "lesson": {
+                "id": "l2_prof_ch4_t1_lesson",
+                "title": "Recording Payroll",
+                "summary": "Gross pay, deductions, net pay, and employer contributions.",
+                "estimatedMinutes": 8,
+                "sections": [
+                  { "type": "concept", "heading": "The payroll cycle", "body": "Gross salary is the cost to the company. Deductions (TDS, employee provident fund, insurance) are withheld from the employee. Net pay is paid out. Employer contributions (EPF, ESI) are an additional expense." },
+                  { "type": "concept", "heading": "The entries", "body": "Debit Salaries (gross); Credit TDS Payable, Credit EPF Payable (employee share), Credit Bank (net pay). Employer contribution: Debit EPF/ESI expense; Credit EPF/ESI payable. Payables are settled when remitted to the government." },
+                  { "type": "example", "heading": "Example", "body": "Gross salary ₹50,000; TDS ₹5,000; EPF employee ₹2,500; net pay ₹42,500. Debit salaries 50,000; credit TDS 5,000, EPF 2,500, bank 42,500." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Compute net pay: 50,000 - 5,000 - 2,500 = 42,500. 2. Record gross salary as the expense. 3. Split the credit between statutory payables and bank. 4. When remitted: debit the payables, credit bank." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Charging only net pay to salaries expense. Forgetting employer contributions. Treating TDS as the company's expense — it is the employee's tax, withheld and remitted." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_payroll_1",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "Gross salary ₹80,000; TDS ₹8,000; employee PF ₹4,000. What is the debit to the salary account?",
+                  "options": [
+                    { "key": "A", "text": "₹68,000" },
+                    { "key": "B", "text": "₹80,000" },
+                    { "key": "C", "text": "₹72,000" },
+                    { "key": "D", "text": "₹76,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Salary expense is recorded at gross — the full cost of employing the person. Deductions are liabilities, not reductions in expense.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That is net pay, not the expense." },
+                    { "key": "C", "why": "That is net pay plus PF — still not gross." },
+                    { "key": "D", "why": "That is gross minus TDS only." }
+                  ],
+                  "commonMistake": "Recording net pay as the salary expense.",
+                  "hint": "What is the full cost of the employee?",
+                  "tags": ["payroll"],
+                  "skills": ["payroll"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch4_t2",
+              "slug": "gst-concepts",
+              "title": "GST Accounting Concepts",
+              "description": "Input and output GST.",
+              "lesson": {
+                "id": "l2_prof_ch4_t2_lesson",
+                "title": "GST in the Books",
+                "summary": "Output GST, input GST, set-off, and the GST payable to the government.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "How GST works", "body": "GST is charged on sales (output GST) and paid on purchases (input GST). The business collects output GST from customers, claims input GST on purchases, and remits the net difference to the government." },
+                  { "type": "concept", "heading": "The entries", "body": "On a sale: Debit customer; Credit Sales (net); Credit Output GST. On a purchase: Debit Purchases (net); Debit Input GST; Credit supplier. At month end: Input GST and Output GST are set off; the net is paid (Debit Output GST; Credit Input GST; Credit Bank)." },
+                  { "type": "example", "heading": "Example", "body": "Sold goods ₹1,00,000 + 18% GST. Debit customer 1,18,000; Credit sales 1,00,000; Credit output GST 18,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Record sale net of GST plus output GST collected. 2. Record purchase net plus input GST paid. 3. Net GST payable = output 18,000 - input 9,000 = 9,000. 4. Remit: debit output GST 18,000; credit input GST 9,000; credit bank 9,000." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Including GST in the sales figure (sales must be net). Treating input GST as an expense — it is a receivable from the government until set off. Remitting the full output GST without set-off." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_gst_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Output GST collected is ₹45,000 and input GST paid is ₹30,000. What GST is payable to the government (in ₹)?",
+                  "answer": { "value": "15000", "accepted": ["15000", "15,000", "15000.00"] },
+                  "explanation": "GST payable = output GST - input GST = 45,000 - 30,000 = 15,000.",
+                  "commonMistake": "Paying the full output GST without set-off.",
+                  "hint": "Set off input GST against output GST.",
+                  "tags": ["gst"],
+                  "skills": ["tax_awareness"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l2_q_gst_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Goods sold for ₹50,000 plus 18% GST. What is the journal entry?",
+                  "options": [
+                    { "key": "A", "text": "Debit Customer ₹50,000; Credit Sales ₹50,000; Credit Output GST ₹9,000" },
+                    { "key": "B", "text": "Debit Customer ₹59,000; Credit Sales ₹50,000; Credit Output GST ₹9,000" },
+                    { "key": "C", "text": "Debit Customer ₹59,000; Credit Sales ₹59,000" },
+                    { "key": "D", "text": "Debit Customer ₹50,000; Credit Sales ₹41,000; Credit Output GST ₹9,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The customer pays the full 59,000 (debit). Sales is recorded net at 50,000 and output GST (18% × 50,000 = 9,000) is credited as a liability.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "The customer owes the GST too — the debit must be 59,000." },
+                    { "key": "C", "why": "Sales must be recorded net of GST." },
+                    { "key": "D", "why": "Sales is 50,000, not 41,000." }
+                  ],
+                  "commonMistake": "Recording sales inclusive of GST.",
+                  "hint": "Sales is net; GST is a separate liability.",
+                  "tags": ["gst", "journal"],
+                  "skills": ["tax_awareness"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch4_t3",
+              "slug": "tds-concepts",
+              "title": "TDS Accounting Concepts",
+              "description": "Tax deducted at source.",
+              "lesson": {
+                "id": "l2_prof_ch4_t3_lesson",
+                "title": "TDS in the Books",
+                "summary": "Deducting, depositing and claiming TDS.",
+                "estimatedMinutes": 8,
+                "sections": [
+                  { "type": "concept", "heading": "What is TDS?", "body": "Tax Deducted at Source: the payer deducts tax from certain payments (salaries, rent, professional fees) and deposits it with the government. It is the payee's tax, collected in advance." },
+                  { "type": "concept", "heading": "The entries", "body": "When paying rent of ₹20,000 with TDS of ₹2,000: Debit Rent 20,000; Credit TDS Payable 2,000; Credit Bank 18,000. When depositing: Debit TDS Payable; Credit Bank." },
+                  { "type": "example", "heading": "Example", "body": "Professional fee ₹1,00,000, TDS 10% = ₹10,000. Debit professional fees 1,00,000; credit TDS payable 10,000; credit bank 90,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Compute TDS on the gross payment. 2. Record the full amount as expense, TDS as a payable, net to bank. 3. Deposit within the due date: debit TDS payable, credit bank. 4. The payee claims the TDS as credit against their own tax." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Charging only the net amount to expense. Treating TDS as the payer's expense. Forgetting to deposit on time." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_tds_1",
+                  "type": "numerical",
+                  "difficulty": "easy",
+                  "stem": "Rent of ₹60,000 is paid with TDS deducted at 10%. What amount is paid to the landlord by cheque (in ₹)?",
+                  "answer": { "value": "54000", "accepted": ["54000", "54,000", "54000.00"] },
+                  "explanation": "TDS = 10% × 60,000 = 6,000. Net paid = 60,000 - 6,000 = 54,000.",
+                  "commonMistake": "Paying the gross amount and forgetting TDS.",
+                  "hint": "Deduct 10% before paying.",
+                  "tags": ["tds"],
+                  "skills": ["tax_awareness"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l2_q_tds_2",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "When rent of ₹40,000 is paid with TDS ₹4,000, which entry is correct?",
+                  "options": [
+                    { "key": "A", "text": "Debit Rent ₹36,000; Credit Bank ₹36,000" },
+                    { "key": "B", "text": "Debit Rent ₹40,000; Credit TDS Payable ₹4,000; Credit Bank ₹36,000" },
+                    { "key": "C", "text": "Debit Rent ₹40,000; Credit Bank ₹40,000" },
+                    { "key": "D", "text": "Debit TDS Payable ₹4,000; Credit Rent ₹40,000; Debit Bank ₹36,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The full rent is the expense; TDS is a liability to be deposited; the net goes to bank.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Rent expense is gross, and TDS is a payable, not a reduction in rent." },
+                    { "key": "C", "why": "The TDS is not paid to the landlord — it must be tracked as a payable." },
+                    { "key": "D", "why": "The sides are wrong; TDS payable is credited, not debited." }
+                  ],
+                  "commonMistake": "Recording the net payment as the expense.",
+                  "hint": "The full rent is the cost; part goes to the government.",
+                  "tags": ["tds", "journal"],
+                  "skills": ["tax_awareness"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l2_prof_ch5",
+          "slug": "reporting-controls",
+          "title": "Reporting, Controls & MIS",
+          "description": "Month-end closing, financial statements, cash flow basics, controls and MIS.",
+          "topics": [
+            {
+              "id": "l2_prof_ch5_t1",
+              "slug": "month-end-closing",
+              "title": "Month-end Closing",
+              "description": "The discipline of a clean close.",
+              "lesson": {
+                "id": "l2_prof_ch5_t1_lesson",
+                "title": "The Month-end Checklist",
+                "summary": "Why a structured close prevents errors and keeps reporting timely.",
+                "estimatedMinutes": 7,
+                "sections": [
+                  { "type": "concept", "heading": "Why close the month?", "body": "A structured month-end close ensures all transactions are recorded, balances are reconciled, and management gets reliable numbers on time. Rushing the close breeds errors." },
+                  { "type": "concept", "heading": "The checklist", "body": "1. Post all journal entries. 2. Reconcile bank, receivables, payables. 3. Book accruals, prepayments, depreciation. 4. Verify inventory and cost of sales. 5. Review GST/TDS reconciliations. 6. Run trial balance; investigate variances. 7. Produce P&L, balance sheet and cash flow. 8. Lock the period." },
+                  { "type": "example", "heading": "Example", "body": "A business finds its bank balance differs by ₹12,000 each month. A disciplined close catches the recurring unrecorded bank charge — one root cause instead of a monthly mystery." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Define a closing calendar with cut-off dates. 2. Assign owners to each step. 3. Use a variance review to question anything unusual. 4. Lock the period so post-close changes are deliberate and auditable." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Closing without reconciling. Booking accruals after the P&L is issued. Allowing post-close edits without approval." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_close_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Which of these belongs in a month-end close checklist?",
+                  "options": [
+                    { "key": "A", "text": "Bank reconciliation" },
+                    { "key": "B", "text": "Accruals and prepayments review" },
+                    { "key": "C", "text": "Trial balance and variance review" },
+                    { "key": "D", "text": "All of the above" }
+                  ],
+                  "answer": { "keys": ["D"] },
+                  "explanation": "A proper close covers reconciliation, period-end adjustments, and a trial-balance variance review before statements are issued.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Correct but incomplete — only one step." },
+                    { "key": "B", "why": "Correct but incomplete — only one step." },
+                    { "key": "C", "why": "Correct but incomplete — only one step." }
+                  ],
+                  "commonMistake": "Treating the close as a single step instead of a checklist.",
+                  "hint": "The close is a sequence of checks.",
+                  "tags": ["month-end"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch5_t2",
+              "slug": "financial-statements",
+              "title": "Financial Statements",
+              "description": "The reports management reads.",
+              "lesson": {
+                "id": "l2_prof_ch5_t2_lesson",
+                "title": "Reading the Statements",
+                "summary": "The P&L, balance sheet and the information they carry.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "The profit & loss account", "body": "Shows performance over a period: revenue minus costs = profit. Classified into gross profit and operating profit, down to net profit." },
+                  { "type": "concept", "heading": "The balance sheet", "body": "A snapshot at a date: what the business owns (assets) and how it is funded (liabilities + capital). Classified into current and non-current." },
+                  { "type": "concept", "heading": "Reading them together", "body": "The P&L explains the change in retained earnings; the balance sheet shows where things stand. A growing profit with shrinking cash needs investigation — profit is not cash." },
+                  { "type": "example", "heading": "Example", "body": "Net profit ₹5,00,000 but cash fell ₹2,00,000. Cause: sales grew on credit and inventory built up. The statements together tell the story the P&L alone cannot." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Confusing profit with cash. Judging the balance sheet as 'good' or 'bad' without context. Ignoring the notes and accounting policies." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_fs_1",
+                  "type": "true_false",
+                  "difficulty": "easy",
+                  "stem": "A profitable business can still run out of cash.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Profit is an accounting measure; cash is a physical reality. Credit sales and inventory build-up create profit without cash inflow.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Profit and cash flow are different measures." }
+                  ],
+                  "commonMistake": "Equating profit with cash in the bank.",
+                  "hint": "When is the profit actually received as cash?",
+                  "tags": ["financial-statements"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                },
+                {
+                  "id": "l2_q_fs_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Which statement shows financial position at a specific date?",
+                  "options": [
+                    { "key": "A", "text": "Profit & loss account" },
+                    { "key": "B", "text": "Balance sheet" },
+                    { "key": "C", "text": "Cash flow statement" },
+                    { "key": "D", "text": "Trial balance" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The balance sheet is a snapshot of assets, liabilities and capital at one date.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "The P&L covers a period, not a date." },
+                    { "key": "C", "why": "Cash flow covers a period." },
+                    { "key": "D", "why": "The trial balance is an internal working paper." }
+                  ],
+                  "commonMistake": "Mixing period statements with point-in-time statements.",
+                  "hint": "Which one is a photograph, not a movie?",
+                  "tags": ["financial-statements"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch5_t3",
+              "slug": "cash-flow-basics",
+              "title": "Cash Flow Basics",
+              "description": "Where cash came from and went.",
+              "lesson": {
+                "id": "l2_prof_ch5_t3_lesson",
+                "title": "The Cash Flow Statement",
+                "summary": "Operating, investing and financing activities.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "Three sections", "body": "Operating activities — cash from the core business (customers, suppliers, employees). Investing activities — buying and selling long-term assets. Financing activities — capital, loans, dividends and repayments." },
+                  { "type": "concept", "heading": "Indirect method", "body": "Start with net profit, add back non-cash items (depreciation), adjust for working capital changes (receivables, inventory, payables), and you reach cash from operations." },
+                  { "type": "example", "heading": "Example", "body": "Net profit ₹4,00,000; depreciation ₹60,000; receivables up ₹80,000; payables up ₹30,000. Cash from operations = 4,00,000 + 60,000 - 80,000 + 30,000 = ₹4,10,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Start with net profit. 2. Add back depreciation (non-cash). 3. Deduct increases in current assets (cash tied up), add increases in current liabilities (cash preserved). 4. Present investing and financing separately; sum to the change in cash." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Adding receivables increases instead of deducting. Forgetting depreciation add-back. Mixing up investing and financing (a loan is financing, buying a machine is investing)." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_cashflow_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Net profit ₹3,00,000; depreciation ₹50,000; inventory increased ₹70,000; trade payables increased ₹40,000. Cash from operating activities (in ₹)?",
+                  "answer": { "value": "320000", "accepted": ["320000", "3,20,000", "320000.00"] },
+                  "explanation": "3,00,000 + 50,000 - 70,000 + 40,000 = 3,20,000.",
+                  "commonMistake": "Adding the inventory increase instead of deducting.",
+                  "hint": "Add back depreciation; deduct asset increases; add liability increases.",
+                  "tags": ["cash-flow"],
+                  "skills": ["cash_flow"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 120
+                },
+                {
+                  "id": "l2_q_cashflow_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Purchase of machinery for cash belongs in which section?",
+                  "options": [
+                    { "key": "A", "text": "Operating activities" },
+                    { "key": "B", "text": "Investing activities" },
+                    { "key": "C", "text": "Financing activities" },
+                    { "key": "D", "text": "Not shown in the cash flow statement" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Buying long-term assets is an investing activity.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Operating is the day-to-day trading cycle." },
+                    { "key": "C", "why": "Financing covers capital, loans and dividends." },
+                    { "key": "D", "why": "All cash movements are classified into one of the three sections." }
+                  ],
+                  "commonMistake": "Putting asset purchases in operating cash flow.",
+                  "hint": "Long-term assets = investing.",
+                  "tags": ["cash-flow"],
+                  "skills": ["cash_flow"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch5_t4",
+              "slug": "accounting-controls",
+              "title": "Accounting Controls",
+              "description": "Protecting assets and accuracy.",
+              "lesson": {
+                "id": "l2_prof_ch5_t4_lesson",
+                "title": "Internal Controls",
+                "summary": "Segregation of duties, authorisation, reconciliations and documentation.",
+                "estimatedMinutes": 7,
+                "sections": [
+                  { "type": "concept", "heading": "Why controls?", "body": "Controls reduce the risk of error and fraud, and give management confidence in the numbers. They are preventive (stop problems) or detective (find them)." },
+                  { "type": "concept", "heading": "Key controls", "body": "Segregation of duties — the person who records cash should not be the person who reconciles it. Authorisation — significant transactions need approval. Reconciliations — bank, receivables, payables. Documentation and audit trails. Physical safeguards and access controls." },
+                  { "type": "example", "heading": "Example", "body": "One employee handles supplier payments and also reconciles the bank. A single person could approve a fake invoice and hide it. Separating payment preparation from approval and reconciliation closes the gap." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Map the flow of cash and key transactions. 2. Identify who does what at each step. 3. Separate incompatible duties. 4. Add authorisation limits and regular reconciliations. 5. Test the controls periodically." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Treating controls as bureaucracy. Having controls on paper but not in practice. One person doing everything in a small business without compensating controls." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_controls_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Which is the best example of segregation of duties?",
+                  "options": [
+                    { "key": "A", "text": "One person records sales and also collects cash" },
+                    { "key": "B", "text": "The person preparing payments is different from the person approving them" },
+                    { "key": "C", "text": "The accountant authorises their own expense claims" },
+                    { "key": "D", "text": "All employees can post adjusting entries" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Segregation of duties means no one person controls a transaction end to end; preparation and approval are separated.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Combining recording with custody is exactly what segregation prevents." },
+                    { "key": "C", "why": "Self-authorisation defeats the control." },
+                    { "key": "D", "why": "Adjusting entries should be restricted to authorised staff." }
+                  ],
+                  "commonMistake": "Confusing segregation with any split of work.",
+                  "hint": "Incompatible duties must be split.",
+                  "tags": ["controls"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            },
+            {
+              "id": "l2_prof_ch5_t5",
+              "slug": "mis-basics",
+              "title": "MIS Basics",
+              "description": "Reports that drive decisions.",
+              "lesson": {
+                "id": "l2_prof_ch5_t5_lesson",
+                "title": "Management Information Systems",
+                "summary": "Variance analysis and the reports management actually uses.",
+                "estimatedMinutes": 7,
+                "sections": [
+                  { "type": "concept", "heading": "What is MIS?", "body": "MIS turns accounting data into management reports: sales by product, profitability by segment, cost trends, cash position, ageing. Good MIS answers 'so what?' — it drives decisions." },
+                  { "type": "concept", "heading": "Variance analysis", "body": "Compare actual vs budget vs last year. Investigate material variances. A favourable variance is not automatically good — lower cost could mean quality problems." },
+                  { "type": "example", "heading": "Example", "body": "Actual sales ₹9,00,000 vs budget ₹10,00,000: unfavourable ₹1,00,000. Further analysis shows the gap is entirely in one product line — the report points leadership to the real issue." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Define the metrics that matter. 2. Report actual vs budget vs prior period. 3. Flag material variances with commentary. 4. Follow up on action items. 5. Keep reports timely — a late report is a decision delayed." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Reporting data without analysis. Filling reports with every number instead of the decision-relevant ones. Ignoring the story behind variances." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l2_q_mis_1",
+                  "type": "true_false",
+                  "difficulty": "easy",
+                  "stem": "A favourable cost variance always means good performance.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Lower cost than budget can signal quality problems, delayed maintenance or wrong budgeting — variances must be investigated, not celebrated.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Variances need explanation before judgement." }
+                  ],
+                  "commonMistake": "Reading the sign without the story.",
+                  "hint": "Why is the cost lower?",
+                  "tags": ["mis"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

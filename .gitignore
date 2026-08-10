@@ -1,0 +1,39 @@
+# Flutter/Dart
+.dart_tool/
+.packages
+build/
+.flutter-plugins
+.flutter-plugins-dependencies
+*.iml
+*.lock
+!pubspec.lock
+!web/icons/
+
+# Local tooling (project-local Flutter SDK + pub cache)
+.tooling/
+.tooling_dl.out
+
+# Supabase
+supabase/.env
+supabase/.temp
+
+# IDE / OS
+.idea/
+.vscode/
+*.swp
+.DS_Store
+Thumbs.db
+
+# Environment / secrets — never commit real keys
+*.env
+.env.*
+!.env.example
+
+# Local data
+local_data/
+
+# Local tool logs / Freebuff app state (never commit)
+.freebuff/
+.testlog.txt
+.pubget.log
+.extract.log

@@ -1,0 +1,939 @@
+{
+  "levelId": "level_1",
+  "subjects": [
+    {
+      "id": "l1_fa",
+      "slug": "financial-accounting",
+      "title": "Financial Accounting",
+      "description": "The core foundation: terminology, concepts, the equation, journal, ledger, trial balance, cash & bank and final accounts.",
+      "chapters": [
+        {
+          "id": "l1_fa_ch1",
+          "slug": "accounting-fundamentals",
+          "title": "Accounting Fundamentals",
+          "description": "The language and ground rules of accounting.",
+          "topics": [
+            {
+              "id": "l1_fa_ch1_t1",
+              "slug": "accounting-terminology",
+              "title": "Accounting Terminology",
+              "description": "The essential words every accountant uses.",
+              "lesson": {
+                "id": "l1_fa_ch1_t1_lesson",
+                "title": "The Language of Accounting",
+                "summary": "Understand the core terms: asset, liability, capital, revenue, expense, income, debit, credit.",
+                "estimatedMinutes": 6,
+                "sections": [
+                  { "type": "concept", "heading": "What is accounting?", "body": "Accounting is the process of recording, classifying, summarising and interpreting financial transactions so that the financial position and performance of a business can be reported and understood." },
+                  { "type": "concept", "heading": "Core terms", "body": "Asset — something the business owns or controls that will bring future benefit (cash, inventory, machinery). Liability — something the business owes to outsiders (bank loan, supplier dues). Capital — the owner's investment in the business; what the business owes back to the owner. Revenue — income earned from selling goods or services. Expense — the cost of earning that revenue (rent, salaries, purchases used up)." },
+                  { "type": "example", "heading": "Example", "body": "Meera starts a shop with ₹2,00,000 of her own money. The shop buys goods worth ₹80,000 on credit. Cash ₹2,00,000 is an asset, inventory ₹80,000 is an asset, the supplier ₹80,000 is a liability, and capital ₹2,00,000 is what the business owes Meera." },
+                  { "type": "worked_solution", "heading": "Reading it as a picture", "body": "Everything the business owns (assets) was funded either by outsiders (liabilities) or by the owner (capital). That is why Assets = Liabilities + Capital always holds." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Treating capital as income — it is not revenue, it is the owner's claim. Treating drawings as an expense — drawings reduce capital, they are not an expense of the business." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_terminology_1",
+                  "type": "mcq",
+                  "difficulty": "beginner",
+                  "stem": "Which of the following is an asset?",
+                  "options": [
+                    { "key": "A", "text": "Loan taken from a bank" },
+                    { "key": "B", "text": "Money owed to suppliers" },
+                    { "key": "C", "text": "Inventory held for sale" },
+                    { "key": "D", "text": "Capital contributed by the owner" }
+                  ],
+                  "answer": { "keys": ["C"] },
+                  "explanation": "Inventory is owned by the business and will bring future benefit when sold, so it is an asset. A bank loan and supplier dues are liabilities. Capital is the owner's claim, not an asset.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "A loan is something owed to an outsider — a liability." },
+                    { "key": "B", "why": "Money owed to suppliers is an obligation — a liability." },
+                    { "key": "D", "why": "Capital is the owner's claim against the business, not something the business owns." }
+                  ],
+                  "commonMistake": "Confusing what the business owns with what it owes.",
+                  "hint": "Ask: does the business own this and will it bring future benefit?",
+                  "tags": ["terminology", "assets"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                },
+                {
+                  "id": "l1_q_terminology_2",
+                  "type": "true_false",
+                  "difficulty": "beginner",
+                  "stem": "Capital contributed by the owner is income earned by the business.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Capital is the owner's investment and a claim against the business. It is never revenue. Revenue comes from selling goods or services.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Income is earned from business activity; capital is funding provided by the owner." }
+                  ],
+                  "commonMistake": "Mixing owner funding with business income.",
+                  "hint": "What does the business sell to earn income?",
+                  "tags": ["terminology", "capital"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 30
+                }
+              ]
+            },
+            {
+              "id": "l1_fa_ch1_t2",
+              "slug": "accounting-concepts",
+              "title": "Accounting Concepts",
+              "description": "The assumptions that keep accounting consistent.",
+              "lesson": {
+                "id": "l1_fa_ch1_t2_lesson",
+                "title": "The Ground Rules of Accounting",
+                "summary": "Business entity, going concern, accrual, consistency, prudence, materiality and the matching principle.",
+                "estimatedMinutes": 8,
+                "sections": [
+                  { "type": "concept", "heading": "Why do we need concepts?", "body": "Without shared assumptions, two accountants could report wildly different profits for the same business. Concepts (also called principles) make accounting consistent, comparable and trustworthy." },
+                  { "type": "concept", "heading": "The key concepts", "body": "Business entity — the business is separate from the owner. Going concern — the business will continue long enough to use its assets. Accrual — record income when earned and expenses when incurred, not when cash moves. Consistency — use the same methods period to period. Prudence — do not overstate income or assets; recognise losses early. Matching — match expenses to the income they helped earn. Materiality — minor items can be treated simply if it makes no difference to decisions." },
+                  { "type": "example", "heading": "Example", "body": "Goods worth ₹20,000 were sold in March but the customer pays in April. Under the accrual concept, the sale is recorded in March — when it was earned — not April when cash arrives." },
+                  { "type": "worked_solution", "heading": "Why it matters", "body": "If we recorded sales only when cash arrived, March's profit would be understated and April's overstated. Accrual accounting matches income to the period in which it was earned." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Thinking cash basis and accrual basis are interchangeable. Recording owner's personal expenses as business expenses violates the business entity concept. Applying prudence too aggressively distorts profit." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_concepts_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "A sale was made in March; the customer pays in May. Under the accrual concept, when is the sale recorded?",
+                  "options": [
+                    { "key": "A", "text": "In May, when cash is received" },
+                    { "key": "B", "text": "In March, when the sale was made" },
+                    { "key": "C", "text": "Split equally between March and May" },
+                    { "key": "D", "text": "Only when the accounts are finalised" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The accrual concept records income when it is earned, regardless of when cash moves.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That is the cash basis, not accrual." },
+                    { "key": "C", "why": "Revenue is recognised in the period it is earned, not split." },
+                    { "key": "D", "why": "Finalisation is a reporting step, not a recognition trigger." }
+                  ],
+                  "commonMistake": "Confusing accrual basis with cash basis.",
+                  "hint": "When was the income earned?",
+                  "tags": ["concepts", "accrual"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                },
+                {
+                  "id": "l1_q_concepts_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "The owner pays a personal electricity bill from the business bank account. Which concept is violated?",
+                  "options": [
+                    { "key": "A", "text": "Going concern" },
+                    { "key": "B", "text": "Business entity" },
+                    { "key": "C", "text": "Materiality" },
+                    { "key": "D", "text": "Consistency" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The business entity concept keeps the business separate from the owner. A personal bill is a drawing, not a business expense.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Going concern is about the business continuing to operate." },
+                    { "key": "C", "why": "Materiality concerns whether an item's size affects decisions." },
+                    { "key": "D", "why": "Consistency requires using the same methods each period." }
+                  ],
+                  "commonMistake": "Treating owner's personal spending as a business expense.",
+                  "hint": "Which concept separates the owner from the business?",
+                  "tags": ["concepts", "entity"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l1_fa_ch1_t3",
+              "slug": "accounting-equation",
+              "title": "The Accounting Equation",
+              "description": "Assets = Liabilities + Capital — the foundation of double entry.",
+              "lesson": {
+                "id": "l1_fa_ch1_t3_lesson",
+                "title": "Assets = Liabilities + Capital",
+                "summary": "Every transaction keeps the books in balance; learn to apply the equation.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "The equation", "body": "Assets = Liabilities + Capital. Everything the business owns was funded either by outsiders (liabilities) or by the owner (capital). The equation must hold after every single transaction — this is the heart of double-entry bookkeeping." },
+                  { "type": "formula", "heading": "The equation", "body": "Assets = Liabilities + Capital", "formula": "A = L + C" },
+                  { "type": "example", "heading": "Example", "body": "Ravi starts a business with ₹1,00,000 cash. Assets ₹1,00,000 = Liabilities ₹0 + Capital ₹1,00,000. He then buys a machine for ₹40,000 cash: cash falls to ₹60,000 but the machine (an asset) rises to ₹40,000, so total assets stay ₹1,00,000 and the equation still balances." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "Step 1: cash = 100000 - 40000 = 60000. Step 2: machine = 40000. Step 3: total assets = 60000 + 40000 = 100000. Step 4: liabilities = 0, capital = 100000, so A = L + C holds (100000 = 100000)." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Forgetting that buying an asset with cash changes the mix of assets but not the total. Recording a loan as capital — a loan is a liability, not capital." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_equation_1",
+                  "type": "numerical",
+                  "difficulty": "easy",
+                  "stem": "A business has total assets of ₹5,00,000 and liabilities of ₹1,80,000. What is the capital (in ₹)?",
+                  "answer": { "value": "320000", "accepted": ["320000", "3,20,000", "320000.00", "3,20,000.00"] },
+                  "explanation": "Capital = Assets - Liabilities = 5,00,000 - 1,80,000 = 3,20,000.",
+                  "commonMistake": "Adding assets and liabilities instead of subtracting.",
+                  "hint": "Rearrange A = L + C to find C.",
+                  "tags": ["equation", "capital"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_equation_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "A business has assets of ₹8,00,000 and capital of ₹5,00,000. What are its liabilities?",
+                  "options": [
+                    { "key": "A", "text": "₹13,00,000" },
+                    { "key": "B", "text": "₹3,00,000" },
+                    { "key": "C", "text": "₹5,00,000" },
+                    { "key": "D", "text": "₹8,00,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Liabilities = Assets - Capital = 8,00,000 - 5,00,000 = 3,00,000.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Adding gives total funding, not liabilities." },
+                    { "key": "C", "why": "That is capital itself." },
+                    { "key": "D", "why": "That is total assets." }
+                  ],
+                  "commonMistake": "Adding instead of subtracting.",
+                  "hint": "A = L + C, so L = A - C.",
+                  "tags": ["equation"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_equation_3",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "Capital is ₹2,00,000, liabilities ₹1,00,000. The owner introduces a further ₹50,000 cash. What are total assets now?",
+                  "options": [
+                    { "key": "A", "text": "₹3,00,000" },
+                    { "key": "B", "text": "₹2,50,000" },
+                    { "key": "C", "text": "₹3,50,000" },
+                    { "key": "D", "text": "₹4,00,000" }
+                  ],
+                  "answer": { "keys": ["C"] },
+                  "explanation": "Assets were 2,00,000 + 1,00,000 = 3,00,000. Introducing cash raises both assets and capital by 50,000, so assets = 3,50,000.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That was assets before the new capital." },
+                    { "key": "B", "why": "Adding the cash to capital only, forgetting assets." },
+                    { "key": "D", "why": "Adding the cash twice." }
+                  ],
+                  "commonMistake": "Forgetting that new capital increases assets too.",
+                  "hint": "Cash in means an asset goes up — and capital goes up.",
+                  "tags": ["equation", "capital"],
+                  "skills": ["foundation"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l1_fa_ch2",
+          "slug": "journal-debit-credit",
+          "title": "Journal & Debit/Credit",
+          "description": "The rules of debit and credit and how to record every transaction.",
+          "topics": [
+            {
+              "id": "l1_fa_ch2_t1",
+              "slug": "rules-of-debit-credit",
+              "title": "Rules of Debit and Credit",
+              "description": "The golden rules of double entry.",
+              "lesson": {
+                "id": "l1_fa_ch2_t1_lesson",
+                "title": "Debit What Comes In, Credit What Goes Out",
+                "summary": "The golden rules for real, personal and nominal accounts.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "The golden rules", "body": "Real accounts (assets): Debit what comes in, credit what goes out. Personal accounts (people and firms): Debit the receiver, credit the giver. Nominal accounts (income and expenses): Debit expenses and losses, credit incomes and gains." },
+                  { "type": "concept", "heading": "The modern view", "body": "An easier modern rule: increases in assets and expenses are debits; increases in liabilities, capital and income are credits. Decreases work the opposite way. Every transaction has equal debits and credits — that is double entry." },
+                  { "type": "example", "heading": "Example", "body": "Cash ₹10,000 received from a customer. Cash is an asset increasing → debit cash ₹10,000. The customer (personal account) is giving, so credit the customer ₹10,000. Debits equal credits." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "Transaction: paid rent ₹5,000 by cheque. Rent is an expense (nominal) → debit rent ₹5,000. Bank is an asset decreasing → credit bank ₹5,000. Entry: Rent A/c Dr 5,000 / To Bank A/c 5,000." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Crediting an expense or debiting an income. Forgetting that a decrease in an asset is a credit. Thinking debit always means 'good' and credit always means 'bad' — they are just left and right sides." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_debit_credit_1",
+                  "type": "mcq",
+                  "difficulty": "beginner",
+                  "stem": "Which of the following is a debit?",
+                  "options": [
+                    { "key": "A", "text": "Increase in capital" },
+                    { "key": "B", "text": "Increase in a liability" },
+                    { "key": "C", "text": "Increase in an expense" },
+                    { "key": "D", "text": "Increase in income" }
+                  ],
+                  "answer": { "keys": ["C"] },
+                  "explanation": "Expenses increase on the debit side. Capital, liabilities and income all increase on the credit side.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Capital increases are credits." },
+                    { "key": "B", "why": "Liabilities increase on the credit side." },
+                    { "key": "D", "why": "Income increases are credits." }
+                  ],
+                  "commonMistake": "Remembering only the asset rule and guessing for the rest.",
+                  "hint": "DEAD = Debits: Drawings, Expenses, Assets, Decreases in liabilities.",
+                  "tags": ["debit-credit"],
+                  "skills": ["debit_credit"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                },
+                {
+                  "id": "l1_q_debit_credit_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Goods (inventory) are purchased for cash. Which accounts are affected and how?",
+                  "options": [
+                    { "key": "A", "text": "Debit cash, credit inventory" },
+                    { "key": "B", "text": "Debit inventory, credit cash" },
+                    { "key": "C", "text": "Debit inventory, credit purchases" },
+                    { "key": "D", "text": "Debit purchases, credit sales" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Inventory (asset) increases → debit. Cash (asset) decreases → credit. Both sides stay equal.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That would reduce inventory and increase cash — the reverse of what happened." },
+                    { "key": "C", "why": "Purchases is used for the expense side when buying; cash is the source of payment here." },
+                    { "key": "D", "why": "Sales has not occurred; cash paid, not received." }
+                  ],
+                  "commonMistake": "Debiting cash whenever cash is involved. Cash is credited when it goes out.",
+                  "hint": "Ask what increased and what decreased.",
+                  "tags": ["debit-credit", "journal"],
+                  "skills": ["debit_credit"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_debit_credit_3",
+                  "type": "true_false",
+                  "difficulty": "easy",
+                  "stem": "A decrease in a liability is recorded as a debit.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Liabilities increase on the credit side, so they decrease on the debit side.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Only increases in liabilities are credits; decreases are debits." }
+                  ],
+                  "commonMistake": "Assuming liabilities are always credited.",
+                  "hint": "Each side has two directions: increase and decrease.",
+                  "tags": ["debit-credit"],
+                  "skills": ["debit_credit"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l1_fa_ch2_t2",
+              "slug": "journal-entries",
+              "title": "Journal Entries",
+              "description": "Recording transactions in the book of original entry.",
+              "lesson": {
+                "id": "l1_fa_ch2_t2_lesson",
+                "title": "The Book of Original Entry",
+                "summary": "How to write journal entries: date, accounts, narration, and balancing debits with credits.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "The journal", "body": "The journal is the book of original entry — the first place a transaction is recorded. Each entry shows the date, the accounts debited and credited, the amounts, and a short narration explaining the transaction." },
+                  { "type": "concept", "heading": "The format", "body": "Debit the account(s) first, then credit the account(s) indented below, with 'To' before the credit account. Total debits must equal total credits. Complex transactions can have more than one debit or credit (compound entries)." },
+                  { "type": "example", "heading": "Example", "body": "1 April: Started business with cash ₹1,00,000. Journal entry: Cash A/c Dr ₹1,00,000 / To Capital A/c ₹1,00,000 (Being capital introduced)." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "5 April: Bought furniture ₹25,000 on credit from Woodworks Ltd. Step 1: furniture is an asset increasing → debit. Step 2: Woodworks Ltd is the giver → credit. Entry: Furniture A/c Dr 25,000 / To Woodworks Ltd A/c 25,000 (Being furniture purchased on credit)." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Writing the credit account on the left. Omitting the narration. Recording a credit purchase as a cash purchase. Making debits and credits unequal." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_journal_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Capital of ₹2,00,000 is introduced in cash. What is the correct journal entry?",
+                  "options": [
+                    { "key": "A", "text": "Debit Capital A/c, Credit Cash A/c" },
+                    { "key": "B", "text": "Debit Cash A/c, Credit Capital A/c" },
+                    { "key": "C", "text": "Debit Cash A/c, Credit Bank A/c" },
+                    { "key": "D", "text": "Debit Capital A/c, Credit Bank A/c" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Cash (asset) increases → debit. Capital (owner's claim) increases → credit.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Capital increasing is a credit, not a debit." },
+                    { "key": "C", "why": "No bank account is involved — cash came in." },
+                    { "key": "D", "why": "Capital increases are credits and cash (not bank) is the asset received." }
+                  ],
+                  "commonMistake": "Reversing the sides when capital is involved.",
+                  "hint": "What asset increased? What claim increased?",
+                  "tags": ["journal", "capital"],
+                  "skills": ["journal"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_journal_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Rent of ₹12,000 is paid by cheque. What is the journal entry?",
+                  "options": [
+                    { "key": "A", "text": "Debit Bank A/c, Credit Rent A/c" },
+                    { "key": "B", "text": "Debit Rent A/c, Credit Bank A/c" },
+                    { "key": "C", "text": "Debit Rent A/c, Credit Cash A/c" },
+                    { "key": "D", "text": "Debit Cash A/c, Credit Rent A/c" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Rent is an expense increasing → debit. Payment by cheque reduces the bank account → credit bank.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Bank is going down, so it is credited, and rent is debited." },
+                    { "key": "C", "why": "Payment was by cheque — the bank account, not cash." },
+                    { "key": "D", "why": "That entry describes receiving rent in cash." }
+                  ],
+                  "commonMistake": "Crediting cash when the payment was by cheque.",
+                  "hint": "By cheque means the bank account is affected.",
+                  "tags": ["journal", "expenses"],
+                  "skills": ["journal"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_journal_3",
+                  "type": "fill_blank",
+                  "difficulty": "intermediate",
+                  "stem": "Goods sold on credit to a customer: the journal entry debits the customer's account and credits the ______ account.",
+                  "answer": { "accepted": ["sales", "Sales", "SALES", "sales account"] },
+                  "explanation": "A credit sale debits the customer (receiver of goods) and credits the Sales account (income).",
+                  "commonMistake": "Crediting cash — no cash moved yet.",
+                  "hint": "Which nominal account records income from selling goods?",
+                  "tags": ["journal", "sales"],
+                  "skills": ["journal"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l1_fa_ch3",
+          "slug": "ledger-trial-balance",
+          "title": "Ledger & Trial Balance",
+          "description": "Posting, balancing accounts, and proving the books.",
+          "topics": [
+            {
+              "id": "l1_fa_ch3_t1",
+              "slug": "the-ledger",
+              "title": "The Ledger",
+              "description": "Classifying journal entries into accounts.",
+              "lesson": {
+                "id": "l1_fa_ch3_t1_lesson",
+                "title": "From Journal to Ledger",
+                "summary": "What posting is, how accounts are balanced, and what a balance means.",
+                "estimatedMinutes": 8,
+                "sections": [
+                  { "type": "concept", "heading": "What is the ledger?", "body": "The ledger is the principal book of accounts. Every journal entry is posted into individual accounts (cash, sales, rent...). Each account collects all the transactions affecting it, so you can see the balance at a glance." },
+                  { "type": "concept", "heading": "Balancing an account", "body": "Total the debit side and the credit side. If debits exceed credits, the account has a debit balance; if credits exceed debits, a credit balance. The balancing figure is written on the shorter side to make both sides equal." },
+                  { "type": "example", "heading": "Example", "body": "The Cash account has debits totalling ₹50,000 and credits totalling ₹20,000. Balance: debit ₹30,000 — meaning the business holds ₹30,000 cash." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Post every cash journal entry to the Cash account. 2. Sum debits (50,000) and credits (20,000). 3. Difference 30,000 is a debit balance (c/d — carried down). 4. Bring it down (b/d) on the debit side as the opening balance of the next period." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Posting an entry to the wrong side of the account. Forgetting to post both sides of a journal entry. Confusing carried down (c/d) with brought down (b/d)." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_ledger_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "An account's debit side totals ₹80,000 and its credit side totals ₹65,000. What is the balance?",
+                  "options": [
+                    { "key": "A", "text": "Debit balance of ₹15,000" },
+                    { "key": "B", "text": "Credit balance of ₹15,000" },
+                    { "key": "C", "text": "Debit balance of ₹1,45,000" },
+                    { "key": "D", "text": "Credit balance of ₹1,45,000" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Debits (80,000) exceed credits (65,000) by 15,000, so the account has a debit balance of ₹15,000.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "The balance is on the larger side, which is debit here." },
+                    { "key": "C", "why": "That is the total of both sides, not the balance." },
+                    { "key": "D", "why": "Both the direction and the amount are wrong." }
+                  ],
+                  "commonMistake": "Adding the sides instead of taking the difference.",
+                  "hint": "Balance = larger side minus smaller side, on the larger side.",
+                  "tags": ["ledger"],
+                  "skills": ["ledger"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_ledger_2",
+                  "type": "true_false",
+                  "difficulty": "beginner",
+                  "stem": "An asset account normally has a credit balance.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Assets increase with debits, so asset accounts normally show a debit balance. Liabilities and capital normally show credit balances.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Assets are debited when they increase, giving debit balances." }
+                  ],
+                  "commonMistake": "Assuming everything 'positive' is a credit.",
+                  "hint": "Which side do assets increase on?",
+                  "tags": ["ledger"],
+                  "skills": ["ledger"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l1_fa_ch3_t2",
+              "slug": "trial-balance",
+              "title": "Trial Balance",
+              "description": "Checking that the books balance.",
+              "lesson": {
+                "id": "l1_fa_ch3_t2_lesson",
+                "title": "Proving the Arithmetic",
+                "summary": "What a trial balance is, what it proves, and what it cannot catch.",
+                "estimatedMinutes": 8,
+                "sections": [
+                  { "type": "concept", "heading": "What is a trial balance?", "body": "A statement listing every ledger account with its balance — debits in one column, credits in another. Because every journal entry has equal debits and credits, the totals must agree." },
+                  { "type": "concept", "heading": "What it proves", "body": "A balanced trial balance proves the arithmetic of posting: every debit has a matching credit. It does NOT prove the entries are correct — a transaction posted to the wrong account still balances." },
+                  { "type": "example", "heading": "Example", "body": "Trial balance: Cash Dr 30,000; Sales Cr 50,000; Purchases Dr 20,000; Capital Cr 10,000; Rent Dr 10,000. Debit total = 60,000; Credit total = 60,000. Balanced." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Extract every account balance from the ledger. 2. List debit balances on the left and credit balances on the right. 3. Total both columns. 4. If they differ, hunt for: a posting on one side only, a transposition error, or an account omitted." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Thinking a balanced trial balance means the books are right. Putting an expense on the credit side. Omitting an account." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_tb_1",
+                  "type": "numerical",
+                  "difficulty": "easy",
+                  "stem": "A trial balance lists: Cash ₹25,000 Dr; Bank ₹40,000 Dr; Sales ₹90,000 Cr; Purchases ₹30,000 Dr; Rent ₹5,000 Dr. What is the missing balancing figure (in ₹) if the trial balance balances?",
+                  "answer": { "value": "10000", "accepted": ["10000", "10,000", "10000.00"] },
+                  "explanation": "Debits = 25,000 + 40,000 + 30,000 + 5,000 = 1,00,000. Credits = 90,000. Missing credit = 1,00,000 - 90,000 = 10,000.",
+                  "commonMistake": "Miscounting which side the missing item belongs to.",
+                  "hint": "Total the debits, then find what the credits need.",
+                  "tags": ["trial-balance"],
+                  "skills": ["trial_balance"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                },
+                {
+                  "id": "l1_q_tb_2",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "A trial balance balances. Which of these errors would it still NOT detect?",
+                  "options": [
+                    { "key": "A", "text": "Posting a sale of ₹5,000 to the purchases account" },
+                    { "key": "B", "text": "Posting a credit of ₹5,000 as ₹500" },
+                    { "key": "C", "text": "Omitting an entire journal entry" },
+                    { "key": "D", "text": "All of the above" }
+                  ],
+                  "answer": { "keys": ["D"] },
+                  "explanation": "A balanced trial balance cannot detect errors that keep debits equal to credits: wrong account, equal-sided wrong amounts, or a fully omitted entry.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Wrong-account errors balance and are invisible to the trial balance." },
+                    { "key": "B", "why": "If both sides were posted as 500, it still balances." },
+                    { "key": "C", "why": "A fully omitted entry removes equal debits and credits." }
+                  ],
+                  "commonMistake": "Believing the trial balance catches every error.",
+                  "hint": "Which errors change both sides equally?",
+                  "tags": ["trial-balance"],
+                  "skills": ["trial_balance"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 75
+                },
+                {
+                  "id": "l1_q_tb_3",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Which account normally has a credit balance in the trial balance?",
+                  "options": [
+                    { "key": "A", "text": "Cash" },
+                    { "key": "B", "text": "Machinery" },
+                    { "key": "C", "text": "Sales" },
+                    { "key": "D", "text": "Purchases" }
+                  ],
+                  "answer": { "keys": ["C"] },
+                  "explanation": "Sales is income, which increases on the credit side, so it normally shows a credit balance.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Cash is an asset — debit balance." },
+                    { "key": "B", "why": "Machinery is an asset — debit balance." },
+                    { "key": "D", "why": "Purchases is an expense — debit balance." }
+                  ],
+                  "commonMistake": "Forgetting income accounts are credits.",
+                  "hint": "Which account is income?",
+                  "tags": ["trial-balance"],
+                  "skills": ["trial_balance"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l1_fa_ch4",
+          "slug": "cash-bank",
+          "title": "Cash & Bank",
+          "description": "Cash book and bank reconciliation.",
+          "topics": [
+            {
+              "id": "l1_fa_ch4_t1",
+              "slug": "cash-book",
+              "title": "Cash Book",
+              "description": "The cash and bank account in one book.",
+              "lesson": {
+                "id": "l1_fa_ch4_t1_lesson",
+                "title": "Recording Cash Movements",
+                "summary": "Single and double column cash books, and why the cash book is also a ledger.",
+                "estimatedMinutes": 7,
+                "sections": [
+                  { "type": "concept", "heading": "The cash book", "body": "The cash book records all cash receipts and payments. In a double column cash book, one column tracks cash and another tracks bank. The cash book is both a journal (original entry) and a ledger (the cash account)." },
+                  { "type": "concept", "heading": "Rules", "body": "Receipts go on the debit side; payments go on the credit side. Contra entries record transfers between cash and bank (e.g., depositing cash into the bank), appearing on both sides." },
+                  { "type": "example", "heading": "Example", "body": "Received ₹10,000 cash from a customer: debit cash column ₹10,000. Paid ₹4,000 by cheque for office supplies: credit bank column ₹4,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "Opening cash balance ₹5,000. Cash received ₹10,000 → debit side 15,000. Cash paid ₹6,000 → credit side 6,000. Closing balance = 15,000 - 6,000 = ₹9,000, carried down as the opening balance of the next period." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Putting payments on the debit side. Forgetting the contra entry when cash is deposited into the bank. Treating a bank overdraft as a debit balance." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_cashbook_1",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Cash of ₹5,000 is deposited into the bank. What is the contra entry?",
+                  "options": [
+                    { "key": "A", "text": "Debit Cash A/c, Credit Bank A/c" },
+                    { "key": "B", "text": "Debit Bank A/c, Credit Cash A/c" },
+                    { "key": "C", "text": "Debit Bank A/c, Credit Sales A/c" },
+                    { "key": "D", "text": "Debit Cash A/c, Credit Sales A/c" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Bank (asset) increases → debit bank. Cash (asset) decreases → credit cash. Both are assets, so the entry appears on both sides of the cash book.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That describes withdrawing cash from the bank." },
+                    { "key": "C", "why": "No income is involved in a deposit." },
+                    { "key": "D", "why": "No income is involved." }
+                  ],
+                  "commonMistake": "Forgetting that a contra entry affects two asset accounts.",
+                  "hint": "Cash goes down, bank goes up.",
+                  "tags": ["cash-book"],
+                  "skills": ["journal"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l1_q_cashbook_2",
+                  "type": "true_false",
+                  "difficulty": "easy",
+                  "stem": "In the cash book, all receipts are recorded on the debit side.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "The cash book is the cash account: receipts increase cash (debit) and payments decrease it (credit).",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Receipts increase the cash balance, which is a debit." }
+                  ],
+                  "commonMistake": "Thinking of the cash book like a personal bank statement.",
+                  "hint": "The cash book is the business's cash account.",
+                  "tags": ["cash-book"],
+                  "skills": ["journal"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l1_fa_ch4_t2",
+              "slug": "bank-reconciliation",
+              "title": "Bank Reconciliation",
+              "description": "Why the bank says one thing and the books say another.",
+              "lesson": {
+                "id": "l1_fa_ch4_t2_lesson",
+                "title": "Matching the Bank Statement",
+                "summary": "Cheques issued but not presented, cheques deposited but not cleared, bank charges and direct debits.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "Why balances differ", "body": "The cash book balance and the bank statement balance differ because of timing and items the business does not record itself: unpresented cheques (issued, not yet cleared), uncredited cheques (deposited, not yet cleared), bank charges, interest, and direct debits/credits." },
+                  { "type": "concept", "heading": "Reconciling", "body": "Start from the cash book balance and adjust: deduct uncredited cheques, add unpresented cheques, add/deduct bank charges and direct items — until you reach the bank statement balance (or vice versa)." },
+                  { "type": "example", "heading": "Example", "body": "Cash book balance ₹50,000. Cheques issued but not presented ₹8,000. Cheques deposited but not cleared ₹5,000. Bank statement balance = 50,000 - 5,000 + 8,000 = ₹53,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "Step 1: start with cash book balance 50,000. Step 2: uncredited cheques reduce the bank balance → subtract 5,000. Step 3: unpresented cheques mean the bank has not yet paid them → add 8,000. Step 4: statement balance = 53,000. The difference is entirely timing." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Adding uncredited cheques instead of subtracting. Forgetting bank charges that the business only learns about from the statement." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_brs_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Cash book balance (favourable) is ₹60,000. Cheques issued but not yet presented: ₹12,000. Cheques deposited but not yet cleared: ₹9,000. What is the bank statement balance (in ₹)?",
+                  "answer": { "value": "63000", "accepted": ["63000", "63,000", "63000.00"] },
+                  "explanation": "Statement balance = cash book balance - uncredited cheques + unpresented cheques = 60,000 - 9,000 + 12,000 = 63,000.",
+                  "commonMistake": "Adding the uncredited cheques instead of subtracting.",
+                  "hint": "Unpresented cheques add; uncredited cheques subtract (from the cash book balance).",
+                  "tags": ["bank-reconciliation"],
+                  "skills": ["trial_balance"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 90
+                },
+                {
+                  "id": "l1_q_brs_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Bank charges of ₹500 appear only on the bank statement. How do they affect the cash book?",
+                  "options": [
+                    { "key": "A", "text": "Credit the bank account in the cash book by ₹500" },
+                    { "key": "B", "text": "Debit the bank account in the cash book by ₹500" },
+                    { "key": "C", "text": "No entry is needed in the cash book" },
+                    { "key": "D", "text": "Credit the cash account by ₹500" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Bank charges reduce the bank balance, so the bank account is credited when the cash book is updated to match the statement.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "A debit would increase the bank balance — wrong direction." },
+                    { "key": "C", "why": "The cash book must be updated for items the bank processed." },
+                    { "key": "D", "why": "The charge hits the bank account, not cash." }
+                  ],
+                  "commonMistake": "Forgetting to update the cash book for bank-only items.",
+                  "hint": "Bank charges reduce the amount the business has at the bank.",
+                  "tags": ["bank-reconciliation"],
+                  "skills": ["trial_balance"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l1_fa_ch5",
+          "slug": "final-accounts",
+          "title": "Final Accounts",
+          "description": "Adjustments, and the trading and profit & loss account with the balance sheet.",
+          "topics": [
+            {
+              "id": "l1_fa_ch5_t1",
+              "slug": "adjustments",
+              "title": "Adjustments",
+              "description": "Closing stock, outstanding and prepaid items, depreciation.",
+              "lesson": {
+                "id": "l1_fa_ch5_t1_lesson",
+                "title": "The Year-End Adjustments",
+                "summary": "Accruals, prepayments, closing stock, depreciation and how each affects the P&L and balance sheet.",
+                "estimatedMinutes": 12,
+                "sections": [
+                  { "type": "concept", "heading": "Why adjust?", "body": "Final accounts must show the true profit of the period. Under the accrual and matching concepts, expenses and incomes are matched to the period they belong to — requiring year-end adjustments." },
+                  { "type": "concept", "heading": "The main adjustments", "body": "Outstanding (accrued) expenses — expenses incurred but unpaid: add to the expense in the P&L and show as a liability. Prepaid expenses — paid but not yet incurred: deduct from the expense and show as an asset. Outstanding income — earned but not received: add to income and show as an asset. Closing stock — unsold goods: shown on the credit side of the trading account and as an asset. Depreciation — the wear and tear of fixed assets: an expense reducing profit and the asset's value." },
+                  { "type": "example", "heading": "Example", "body": "Salaries paid during the year ₹1,20,000; salaries outstanding at year end ₹10,000. P&L shows salaries ₹1,30,000. Balance sheet shows outstanding salaries ₹10,000 as a liability." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "Step 1: identify the expense actually belonging to the year: paid 1,20,000 + outstanding 10,000 = 1,30,000. Step 2: charge 1,30,000 to the P&L. Step 3: the unpaid 10,000 is a current liability. Step 4: next year, when paid, it is reversed against the liability." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Showing prepaid expenses as a liability or outstanding expenses as an asset. Forgetting to add outstanding expenses to the P&L expense. Double counting closing stock." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_adjust_1",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "Insurance of ₹24,000 was paid for the year ending 31 March. Of this, ₹6,000 covers the next year. How is this treated?",
+                  "options": [
+                    { "key": "A", "text": "P&L expense ₹24,000; no balance sheet item" },
+                    { "key": "B", "text": "P&L expense ₹18,000; prepaid insurance ₹6,000 as an asset" },
+                    { "key": "C", "text": "P&L expense ₹18,000; prepaid insurance ₹6,000 as a liability" },
+                    { "key": "D", "text": "P&L expense ₹30,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Only ₹18,000 belongs to this year. The ₹6,000 prepaid portion is carried forward as a current asset (prepaid expenses).",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "The ₹6,000 relates to next year and must not hit this year's P&L." },
+                    { "key": "C", "why": "Prepaid is an asset (benefit already paid for), not a liability." },
+                    { "key": "D", "why": "That overstates this year's expense." }
+                  ],
+                  "commonMistake": "Charging the full amount paid instead of the amount that belongs to the year.",
+                  "hint": "Split the payment between this year and next year.",
+                  "tags": ["adjustments"],
+                  "skills": ["adjustments"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 75
+                },
+                {
+                  "id": "l1_q_adjust_2",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "Rent paid during the year is ₹90,000 and rent outstanding at year end is ₹9,000. What appears in the final accounts?",
+                  "options": [
+                    { "key": "A", "text": "P&L rent ₹90,000; liability ₹9,000" },
+                    { "key": "B", "text": "P&L rent ₹99,000; liability ₹9,000" },
+                    { "key": "C", "text": "P&L rent ₹99,000; asset ₹9,000" },
+                    { "key": "D", "text": "P&L rent ₹81,000; liability ₹9,000" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The year's rent is 90,000 + 9,000 = 99,000 charged to the P&L; the unpaid 9,000 is a current liability (outstanding expenses).",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "The outstanding rent is a cost of this year too." },
+                    { "key": "C", "why": "Outstanding expenses are liabilities, not assets." },
+                    { "key": "D", "why": "Outstanding rent is added, not subtracted." }
+                  ],
+                  "commonMistake": "Forgetting to add outstanding expenses into the P&L figure.",
+                  "hint": "Accrual basis: the expense is incurred, whether paid or not.",
+                  "tags": ["adjustments", "accruals"],
+                  "skills": ["adjustments"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 75
+                },
+                {
+                  "id": "l1_q_adjust_3",
+                  "type": "true_false",
+                  "difficulty": "easy",
+                  "stem": "Closing stock appears as an asset in the balance sheet and on the credit side of the trading account.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Closing stock is deducted in the trading account (credited) to compute cost of goods sold, and it is an asset in the balance sheet.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Both statements are correct." }
+                  ],
+                  "commonMistake": "Forgetting closing stock reduces cost of goods sold.",
+                  "hint": "Unsold goods are still owned at year end.",
+                  "tags": ["adjustments", "closing-stock"],
+                  "skills": ["adjustments"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l1_fa_ch5_t2",
+              "slug": "trading-pnl-balance-sheet",
+              "title": "Trading, P&L and Balance Sheet",
+              "description": "Putting the final accounts together.",
+              "lesson": {
+                "id": "l1_fa_ch5_t2_lesson",
+                "title": "The Final Picture",
+                "summary": "Gross profit, net profit, and how the balance sheet ties everything together.",
+                "estimatedMinutes": 12,
+                "sections": [
+                  { "type": "concept", "heading": "The trading account", "body": "Shows gross profit: Sales - Cost of Goods Sold (opening stock + purchases + direct expenses - closing stock)." },
+                  { "type": "concept", "heading": "The profit & loss account", "body": "Starts with gross profit, deducts indirect expenses (rent, salaries, depreciation, interest) and adds other incomes (commission, interest received) to give net profit for the year." },
+                  { "type": "concept", "heading": "The balance sheet", "body": "A snapshot: Assets on one side, Liabilities and Capital on the other. Net profit increases capital; drawings and losses reduce it. Assets = Liabilities + Capital must balance." },
+                  { "type": "formula", "heading": "Cost of goods sold", "body": "COGS = Opening Stock + Purchases - Closing Stock", "formula": "COGS = OS + P - CS" },
+                  { "type": "example", "heading": "Example", "body": "Sales ₹5,00,000; opening stock ₹50,000; purchases ₹3,00,000; closing stock ₹70,000. COGS = 50,000 + 3,00,000 - 70,000 = 2,80,000. Gross profit = 5,00,000 - 2,80,000 = 2,20,000. After expenses ₹1,20,000, net profit = ₹1,00,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Trading account: compute gross profit (2,20,000). 2. P&L: deduct expenses (1,20,000) → net profit 1,00,000. 3. Balance sheet: assets = closing stock 70,000 + remaining assets; capital = opening capital + net profit - drawings. 4. Check A = L + C." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Putting closing stock in the balance sheet but forgetting it in the trading account. Treating drawings as an expense. Putting the P&L balance on the wrong side of the balance sheet." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l1_q_final_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Sales ₹6,00,000; opening stock ₹60,000; purchases ₹3,60,000; closing stock ₹80,000. What is the gross profit (in ₹)?",
+                  "answer": { "value": "260000", "accepted": ["260000", "2,60,000", "260000.00"] },
+                  "explanation": "COGS = 60,000 + 3,60,000 - 80,000 = 3,40,000. Gross profit = 6,00,000 - 3,40,000 = 2,60,000.",
+                  "commonMistake": "Forgetting to add opening stock or subtract closing stock.",
+                  "hint": "COGS = opening stock + purchases - closing stock.",
+                  "tags": ["final-accounts"],
+                  "skills": ["financial_statements"],
+                  "marks": 2,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 120
+                },
+                {
+                  "id": "l1_q_final_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Net profit for the year is ₹80,000. Which balance sheet effect is correct?",
+                  "options": [
+                    { "key": "A", "text": "Capital increases by ₹80,000" },
+                    { "key": "B", "text": "Capital decreases by ₹80,000" },
+                    { "key": "C", "text": "Liabilities increase by ₹80,000" },
+                    { "key": "D", "text": "No effect on capital" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Net profit belongs to the owner, so it increases capital in the balance sheet.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "A loss would decrease capital." },
+                    { "key": "C", "why": "Profit is not owed to outsiders." },
+                    { "key": "D", "why": "Profit is added to the owner's claim." }
+                  ],
+                  "commonMistake": "Forgetting that profit flows into capital.",
+                  "hint": "Who does the profit belong to?",
+                  "tags": ["final-accounts"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 45
+                },
+                {
+                  "id": "l1_q_final_3",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "Where does 'closing stock' appear in the final accounts?",
+                  "options": [
+                    { "key": "A", "text": "Credit side of trading account and asset side of balance sheet" },
+                    { "key": "B", "text": "Debit side of trading account and liability side" },
+                    { "key": "C", "text": "Only in the profit & loss account" },
+                    { "key": "D", "text": "Only in the balance sheet" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Closing stock reduces cost of goods sold (credit to trading account) and is an asset at year end.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Closing stock is not a cost being debited and not a liability." },
+                    { "key": "C", "why": "Closing stock belongs in the trading account, not the P&L." },
+                    { "key": "D", "why": "It must also be deducted in the trading account." }
+                  ],
+                  "commonMistake": "Showing closing stock only in the balance sheet.",
+                  "hint": "Unsold goods reduce the cost of goods sold.",
+                  "tags": ["final-accounts"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "negativeMarks": 0,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

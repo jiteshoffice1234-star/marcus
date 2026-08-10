@@ -1,0 +1,298 @@
+{
+  "levelId": "level_4",
+  "subjects": [
+    {
+      "id": "l4_ca",
+      "slug": "ca-final",
+      "title": "CA Final Level",
+      "description": "Advanced financial reporting, Ind AS, complex adjustments, consolidation, business combinations, integrated case studies and mock examinations.",
+      "chapters": [
+        {
+          "id": "l4_ca_ch1",
+          "slug": "advanced-financial-reporting",
+          "title": "Advanced Financial Reporting",
+          "description": "Ind AS deep dive and complex measurement questions.",
+          "topics": [
+            {
+              "id": "l4_ca_ch1_t1",
+              "slug": "ind-as-revenue",
+              "title": "Ind AS 115 — Revenue Recognition",
+              "description": "The five-step model.",
+              "lesson": {
+                "id": "l4_ca_ch1_t1_lesson",
+                "title": "Revenue Under Ind AS 115",
+                "summary": "Identify the contract, performance obligations, transaction price, allocation and recognition.",
+                "estimatedMinutes": 12,
+                "sections": [
+                  { "type": "concept", "heading": "The five-step model", "body": "1. Identify the contract with the customer. 2. Identify the separate performance obligations. 3. Determine the transaction price. 4. Allocate the price to the obligations. 5. Recognise revenue when (or as) each obligation is satisfied." },
+                  { "type": "concept", "heading": "Over time vs point in time", "body": "Revenue is recognised over time when control transfers progressively (e.g., long construction contracts) using an appropriate measure of progress; otherwise at the point in time control transfers. Variable consideration is estimated and constrained to amounts highly probable of not reversing." },
+                  { "type": "example", "heading": "Example", "body": "A software licence (₹8,00,000) plus one year of support (₹2,00,000) sold for ₹9,00,000. The standalone prices are ₹8,00,000 + ₹2,00,000 = ₹10,00,000. Allocate: licence 9,00,000 × 8/10 = 7,20,000; support 1,80,000 recognised over the year." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Are the licence and support distinct obligations? Yes. 2. Transaction price 9,00,000. 3. Allocate by relative standalone selling price. 4. Recognise the licence at transfer and the support rateably. 5. Disclose the significant judgements." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Combining distinct obligations into one. Ignoring variable consideration constraints. Recognising the whole bundle at delivery when support is a separate obligation." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l4_q_revenue_1",
+                  "type": "numerical",
+                  "difficulty": "ca_final",
+                  "stem": "A bundle sells for ₹9,00,000. Standalone prices: licence ₹8,00,000, support ₹2,00,000. What revenue is allocated to support (in ₹)?",
+                  "answer": { "value": "180000", "accepted": ["180000", "1,80,000", "180000.00"] },
+                  "explanation": "Support share = 9,00,000 × 2,00,000 / (8,00,000 + 2,00,000) = 9,00,000 × 0.2 = 1,80,000.",
+                  "commonMistake": "Allocating the discount proportionally or recognising the full price to the licence.",
+                  "hint": "Allocate by relative standalone selling prices.",
+                  "tags": ["ind-as-115"],
+                  "skills": ["advanced"],
+                  "marks": 2,
+                  "estimatedSeconds": 120
+                },
+                {
+                  "id": "l4_q_revenue_2",
+                  "type": "mcq",
+                  "difficulty": "ca_final",
+                  "stem": "Under Ind AS 115, variable consideration is included in the transaction price only to the extent:",
+                  "options": [
+                    { "key": "A", "text": "It is probable that a significant reversal will not occur" },
+                    { "key": "B", "text": "It is certain" },
+                    { "key": "C", "text": "It has been received in cash" },
+                    { "key": "D", "text": "The customer agrees to it" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Variable consideration is constrained: include only amounts highly probable of not causing a significant revenue reversal when the uncertainty resolves.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Certainty is too strict — estimates are allowed under the constraint." },
+                    { "key": "C", "why": "Cash receipt is not the recognition trigger." },
+                    { "key": "D", "why": "Customer agreement alone is not the test." }
+                  ],
+                  "commonMistake": "Including the full estimated variable consideration without the constraint.",
+                  "hint": "The 'constraint' limits what you can recognise.",
+                  "tags": ["ind-as-115"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 60
+                }
+              ]
+            },
+            {
+              "id": "l4_ca_ch1_t2",
+              "slug": "complex-adjustments",
+              "title": "Complex Accounting Adjustments",
+              "description": "Leases, deferred tax, EPS.",
+              "lesson": {
+                "id": "l4_ca_ch1_t2_lesson",
+                "title": "Complex Adjustments: Leases, Deferred Tax and EPS",
+                "summary": "Right-of-use assets, deferred tax liabilities and diluted earnings per share.",
+                "estimatedMinutes": 12,
+                "sections": [
+                  { "type": "concept", "heading": "Leases (Ind AS 116)", "body": "Lessees recognise a right-of-use asset and a lease liability for virtually all leases. The liability is the present value of lease payments; the asset equals the liability plus initial direct costs. Interest and depreciation replace rental expense." },
+                  { "type": "concept", "heading": "Deferred tax (Ind AS 12)", "body": "Deferred tax arises from temporary differences between the carrying amount and tax base of assets and liabilities. It is measured at the tax rates expected to apply when the difference reverses. Recognise a deferred tax liability for taxable temporary differences and a deferred tax asset when recovery is probable." },
+                  { "type": "concept", "heading": "Earnings per share (Ind AS 33)", "body": "Basic EPS = profit attributable to equity holders ÷ weighted average number of shares. Diluted EPS adjusts for potential ordinary shares (convertibles, options) using the treasury-stock method / if-converted method." },
+                  { "type": "example", "heading": "Example", "body": "A lease has payments of ₹1,00,000 per year for 5 years, discounted at 8%: present value ≈ ₹3,99,271. The lessee books a right-of-use asset and lease liability of ₹3,99,271; year 1 interest ≈ ₹31,942, and depreciation ≈ ₹79,854 (straight line)." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Discount minimum lease payments at the incremental borrowing rate. 2. Recognise the ROU asset and liability. 3. Charge interest on the liability and depreciation on the asset. 4. For deferred tax: compare carrying amount with tax base; compute the temporary difference; measure at the expected reversal rate. 5. For EPS: compute weighted-average shares; add dilutive potential shares." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Treating operating leases as off-balance sheet. Ignoring temporary differences that reverse. Forgetting the incremental borrowing rate discounting. Counting contingently issuable shares in basic EPS." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l4_q_complex_1",
+                  "type": "mcq",
+                  "difficulty": "ca_final",
+                  "stem": "Under Ind AS 116, a lessee initially recognises:",
+                  "options": [
+                    { "key": "A", "text": "Rental expense each period only" },
+                    { "key": "B", "text": "A right-of-use asset and a lease liability" },
+                    { "key": "C", "text": "A contingent liability" },
+                    { "key": "D", "text": "Nothing until the lease payments are made" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Ind AS 116 puts virtually all leases on the balance sheet: a right-of-use asset and a corresponding lease liability, measured at the present value of lease payments.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That was the old operating-lease treatment." },
+                    { "key": "C", "why": "The lease obligation is a firm liability, not contingent." },
+                    { "key": "D", "why": "The asset and liability are recognised at commencement." }
+                  ],
+                  "commonMistake": "Keeping operating leases off the balance sheet.",
+                  "hint": "What did Ind AS 116 change for lessees?",
+                  "tags": ["ind-as-116"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l4_q_complex_2",
+                  "type": "true_false",
+                  "difficulty": "ca_final",
+                  "stem": "A deferred tax liability is recognised for all taxable temporary differences.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "Deferred tax liabilities are recognised for all taxable temporary differences, with limited exceptions (e.g., initial recognition of goodwill in certain cases).",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "The general rule is full recognition, with narrow exceptions." }
+                  ],
+                  "commonMistake": "Believing deferred tax is optional or only for losses.",
+                  "hint": "The exceptions are narrow — what is the general rule?",
+                  "tags": ["ind-as-12"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l4_ca_ch2",
+          "slug": "consolidation-advanced",
+          "title": "Consolidation & Business Combinations",
+          "description": "Advanced consolidation mechanics.",
+          "topics": [
+            {
+              "id": "l4_ca_ch2_t1",
+              "slug": "acquisition-consolidation",
+              "title": "Acquisition Consolidation",
+              "description": "Full consolidation with goodwill and NCI.",
+              "lesson": {
+                "id": "l4_ca_ch2_t1_lesson",
+                "title": "Consolidation at Acquisition",
+                "summary": "Goodwill, NCI at fair value, and post-acquisition movements.",
+                "estimatedMinutes": 12,
+                "sections": [
+                  { "type": "concept", "heading": "The consolidation worksheet", "body": "Consolidation is performed on a worksheet: combine 100% of each company's balances, then make elimination and adjustment entries that never enter either company's books." },
+                  { "type": "concept", "heading": "Goodwill and NCI", "body": "Goodwill = consideration + NCI (measured at fair value) - fair value of identifiable net assets. Under the fair-value (full) method, NCI includes goodwill; under proportionate method it does not. Post-acquisition profits of the subsidiary are split between the group and NCI." },
+                  { "type": "concept", "heading": "Post-acquisition movements", "body": "Retained earnings of the subsidiary at acquisition are eliminated against the investment; only post-acquisition profits flow into the group's retained earnings (parent's share) and NCI (minority share)." },
+                  { "type": "example", "heading": "Example", "body": "Parent acquires 80% of Sub for ₹9,00,000. Sub's identifiable net assets at fair value ₹10,00,000. NCI fair value ₹2,20,000. Goodwill (full method) = 9,00,000 + 2,20,000 - 10,00,000 = ₹1,20,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Eliminate the investment against Sub's equity at acquisition date. 2. Recognise NCI (full or proportionate). 3. Compute goodwill. 4. Allocate post-acquisition profit between group and NCI. 5. Eliminate intra-group items and unrealised profits." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Forgetting to fair-value the subsidiary's assets at acquisition. Including pre-acquisition profits in group reserves. Using book values for NCI under the full method. Missing intra-group dividends." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l4_q_consol_1",
+                  "type": "numerical",
+                  "difficulty": "ca_final",
+                  "stem": "Consideration ₹9,00,000; NCI at fair value ₹2,20,000; identifiable net assets at fair value ₹10,00,000. What is goodwill under the full method (in ₹)?",
+                  "answer": { "value": "120000", "accepted": ["120000", "1,20,000", "120000.00"] },
+                  "explanation": "Goodwill = 9,00,000 + 2,20,000 - 10,00,000 = 1,20,000.",
+                  "commonMistake": "Omitting NCI from the goodwill computation.",
+                  "hint": "Full method adds NCI at fair value.",
+                  "tags": ["consolidation"],
+                  "skills": ["advanced"],
+                  "marks": 2,
+                  "estimatedSeconds": 120
+                },
+                {
+                  "id": "l4_q_consol_2",
+                  "type": "mcq",
+                  "difficulty": "ca_final",
+                  "stem": "Sub's post-acquisition profit is ₹5,00,000; parent owns 80%. What is NCI's share?",
+                  "options": [
+                    { "key": "A", "text": "₹1,00,000" },
+                    { "key": "B", "text": "₹4,00,000" },
+                    { "key": "C", "text": "₹5,00,000" },
+                    { "key": "D", "text": "₹2,50,000" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "NCI share = 20% × 5,00,000 = 1,00,000.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "That is the parent's 80% share." },
+                    { "key": "C", "why": "That ignores the ownership split." },
+                    { "key": "D", "why": "That is a 50/50 split." }
+                  ],
+                  "commonMistake": "Attributing the whole post-acquisition profit to the group.",
+                  "hint": "NCI gets its percentage of post-acquisition profit.",
+                  "tags": ["consolidation"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l4_ca_ch3",
+          "slug": "case-studies",
+          "title": "Integrated Case Studies",
+          "description": "Multi-part exam-style problems.",
+          "topics": [
+            {
+              "id": "l4_ca_ch3_t1",
+              "slug": "integrated-case",
+              "title": "Integrated Case Studies",
+              "description": "Working through complex, multi-part problems.",
+              "lesson": {
+                "id": "l4_ca_ch3_t1_lesson",
+                "title": "Approaching Case Studies",
+                "summary": "How to structure answers to integrated accounting problems.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "The method", "body": "Read the requirement first, then the facts. Re-state what is being asked, list the data you need, and identify which standards or principles apply. Work in numbered steps and show all workings — marks follow the workings." },
+                  { "type": "concept", "heading": "Common traps", "body": "Unused data (every figure is usually needed), misreading the date boundaries for acquisitions, forgetting tax effects on fair value adjustments, and missing the difference between what the question asks and what it provides." },
+                  { "type": "example", "heading": "Example", "body": "A case gives you a parent's and subsidiary's trial balances, an acquisition date, a fair-value uplift, intra-group sales and a lease. The traps: applying the uplift only from acquisition date, eliminating only part of the intra-group balance, and forgetting the deferred tax on the uplift." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Prepare the consolidation worksheet skeleton. 2. Enter the fair-value adjustments (with deferred tax). 3. Compute goodwill and NCI. 4. Eliminate intra-group items. 5. Recognise the lease asset and liability. 6. Walk the P&L and balance sheet to their final figures. 7. Check the balance sheet balances." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Skipping the planning step. Not showing workings. Applying pre-acquisition reserves to the group. Forgetting to check that assets equal liabilities plus equity." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l4_q_case_1",
+                  "type": "mcq",
+                  "difficulty": "ca_final",
+                  "stem": "A fair-value uplift on a subsidiary's land is recognised in consolidation. Which is the most defensible first step?",
+                  "options": [
+                    { "key": "A", "text": "Credit the uplift directly to group retained earnings" },
+                    { "key": "B", "text": "Increase the land and recognise the related deferred tax" },
+                    { "key": "C", "text": "Ignore it because land is not depreciated" },
+                    { "key": "D", "text": "Record it only in the subsidiary's own books" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Fair-value adjustments are consolidation adjustments: increase the asset to fair value and recognise the related deferred tax impact; the net uplift flows to goodwill/NCI computations, not directly to retained earnings.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "The uplift affects goodwill and NCI, not directly group reserves." },
+                    { "key": "C", "why": "Fair value is required regardless of depreciation." },
+                    { "key": "D", "why": "The subsidiary's books are not restated for consolidation fair values." }
+                  ],
+                  "commonMistake": "Forgetting the deferred tax effect of fair-value uplifts.",
+                  "hint": "Fair-value adjustments have a tax consequence.",
+                  "tags": ["case-study"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 90
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l4_ca_ch4",
+          "slug": "mock-exams",
+          "title": "Mock Examinations",
+          "description": "Exam-style questions and timed mocks.",
+          "topics": [
+            {
+              "id": "l4_ca_ch4_t1",
+              "slug": "mock-exam-guide",
+              "title": "Mock Examination Guide",
+              "description": "How to use the mock exams.",
+              "lesson": {
+                "id": "l4_ca_ch4_t1_lesson",
+                "title": "Preparing for the Mock",
+                "summary": "Timed practice, negative marking awareness and review discipline.",
+                "estimatedMinutes": 6,
+                "sections": [
+                  { "type": "concept", "heading": "Exam conditions", "body": "Sit the mock under timed conditions, in one sitting, without notes. The timer and negative marking are configured on the test. Review every miss — the explanation tells you why the alternatives are wrong." },
+                  { "type": "concept", "heading": "After the mock", "body": "Analyse by skill: which dimensions cost you marks? Those become your next revision targets via the mistake engine. Re-sit the mock after revision and compare." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Practising in comfortable conditions and then being surprised by the timer. Not reading the negative-marking configuration. Skipping the post-mock analysis." }
+                ]
+              },
+              "questions": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "tests": [
+    {
+      "id": "test_professional",
+      "title": "Professional Accountant Test",
+      "description": "Practical accounting across receivables, payables, inventory, depreciation, accruals, GST and TDS.",
+      "kind": "professional",
+      "levelIndex": 2,
+      "durationMinutes": 30,
+      "negativeMarking": 0.25,
+      "passPercentage": 50,
+      "estimatedQuestionCount": 20
+    },
+    {
+      "id": "test_ca_final_mock_1",
+      "title": "CA Final Mock — Paper 1",
+      "description": "Exam-style advanced financial reporting, consolidation and complex adjustments under timed conditions.",
+      "kind": "ca_final_mock",
+      "levelIndex": 4,
+      "durationMinutes": 45,
+      "negativeMarking": 0.5,
+      "passPercentage": 40,
+      "estimatedQuestionCount": 15
+    },
+    {
+      "id": "test_foundation_quiz",
+      "title": "Foundation Quick Test",
+      "description": "A mixed test across the accounting foundation.",
+      "kind": "mixed",
+      "levelIndex": 1,
+      "durationMinutes": 15,
+      "negativeMarking": 0.25,
+      "passPercentage": 40,
+      "estimatedQuestionCount": 12
+    }
+  ]
+}

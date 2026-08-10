@@ -1,0 +1,145 @@
+{
+  "simulations": [
+    {
+      "id": "sim_abc_trading",
+      "slug": "abc-trading-month-one",
+      "title": "Month One — From Zero to Balance Sheet",
+      "description": "Start ABC Trading with capital, trade with suppliers and customers, pay expenses, and close with depreciation and an accrual.",
+      "companyName": "ABC Trading Pvt Ltd",
+      "industry": "Wholesale trading",
+      "levelIndex": 1,
+      "openingBalances": {
+        "Cash": "100000"
+      },
+      "transactions": [
+        {
+          "seq": 1,
+          "narration": "Owner introduced ₹2,00,000 as capital, deposited into the bank.",
+          "hints": ["Bank is an asset increasing (debit).", "Capital is the owner's claim increasing (credit)."],
+          "expectedJournal": [
+            { "account": "Bank", "side": "debit", "amount": "200000" },
+            { "account": "Capital", "side": "credit", "amount": "200000" }
+          ]
+        },
+        {
+          "seq": 2,
+          "narration": "Purchased inventory worth ₹1,50,000 on credit from a supplier.",
+          "hints": ["Purchases (expense) increase → debit.", "Supplier (Accounts Payable) increases → credit."],
+          "expectedJournal": [
+            { "account": "Purchases", "side": "debit", "amount": "150000" },
+            { "account": "Accounts Payable", "side": "credit", "amount": "150000" }
+          ]
+        },
+        {
+          "seq": 3,
+          "narration": "Sold inventory for ₹2,00,000 on credit to a customer.",
+          "hints": ["Customer (Accounts Receivable) increases → debit.", "Sales (income) increases → credit."],
+          "expectedJournal": [
+            { "account": "Accounts Receivable", "side": "debit", "amount": "200000" },
+            { "account": "Sales Revenue", "side": "credit", "amount": "200000" }
+          ]
+        },
+        {
+          "seq": 4,
+          "narration": "Paid rent of ₹25,000 by cheque.",
+          "hints": ["Rent (expense) increases → debit.", "Bank decreases → credit."],
+          "expectedJournal": [
+            { "account": "Rent", "side": "debit", "amount": "25000" },
+            { "account": "Bank", "side": "credit", "amount": "25000" }
+          ]
+        },
+        {
+          "seq": 5,
+          "narration": "Customer paid ₹1,20,000 by cheque against their account.",
+          "hints": ["Bank increases → debit.", "Accounts Receivable decreases → credit."],
+          "expectedJournal": [
+            { "account": "Bank", "side": "debit", "amount": "120000" },
+            { "account": "Accounts Receivable", "side": "credit", "amount": "120000" }
+          ]
+        },
+        {
+          "seq": 6,
+          "narration": "Paid the supplier ₹1,00,000 by cheque.",
+          "hints": ["Accounts Payable decreases → debit.", "Bank decreases → credit."],
+          "expectedJournal": [
+            { "account": "Accounts Payable", "side": "debit", "amount": "100000" },
+            { "account": "Bank", "side": "credit", "amount": "100000" }
+          ]
+        },
+        {
+          "seq": 7,
+          "narration": "Record depreciation of ₹8,000 on office furniture for the month.",
+          "hints": ["Depreciation is an expense → debit.", "Accumulated Depreciation (contra-asset) increases → credit."],
+          "expectedJournal": [
+            { "account": "Depreciation Expense", "side": "debit", "amount": "8000" },
+            { "account": "Accumulated Depreciation", "side": "credit", "amount": "8000" }
+          ]
+        },
+        {
+          "seq": 8,
+          "narration": "Salaries of ₹40,000 for the month are outstanding (to be paid next month).",
+          "hints": ["Salaries (expense) belongs to this month → debit.", "Accrued Expenses (liability) increases → credit."],
+          "expectedJournal": [
+            { "account": "Salaries", "side": "debit", "amount": "40000" },
+            { "account": "Accrued Expenses", "side": "credit", "amount": "40000" }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "sim_zenith_gst",
+      "slug": "zenith-retail-gst-month",
+      "title": "A GST Month — Tax in the Books",
+      "description": "Run Zenith Retail through a month of GST: purchases and sales with 18% GST, a TDS deduction, and a GST remittance.",
+      "companyName": "Zenith Retail",
+      "industry": "Retail",
+      "levelIndex": 2,
+      "openingBalances": {
+        "Bank": "500000",
+        "Cash": "50000"
+      },
+      "transactions": [
+        {
+          "seq": 1,
+          "narration": "Purchased goods ₹2,00,000 plus 18% GST on credit.",
+          "hints": ["Purchases is net of GST → debit 2,00,000.", "Input GST is a receivable → debit 36,000.", "Supplier (Accounts Payable) owes the full 2,36,000 → credit."],
+          "expectedJournal": [
+            { "account": "Purchases", "side": "debit", "amount": "200000" },
+            { "account": "Input GST", "side": "debit", "amount": "36000" },
+            { "account": "Accounts Payable", "side": "credit", "amount": "236000" }
+          ]
+        },
+        {
+          "seq": 2,
+          "narration": "Sold goods ₹3,00,000 plus 18% GST on credit.",
+          "hints": ["Customer owes the full 3,54,000 → debit.", "Sales is net of GST → credit 3,00,000.", "Output GST is a liability → credit 54,000."],
+          "expectedJournal": [
+            { "account": "Accounts Receivable", "side": "debit", "amount": "354000" },
+            { "account": "Sales Revenue", "side": "credit", "amount": "300000" },
+            { "account": "Output GST", "side": "credit", "amount": "54000" }
+          ]
+        },
+        {
+          "seq": 3,
+          "narration": "Paid professional fees of ₹50,000 by cheque after deducting TDS at 10%.",
+          "hints": ["Professional fees are an expense at gross → debit 50,000.", "TDS payable is 5,000 → credit.", "Bank pays the net 45,000 → credit."],
+          "expectedJournal": [
+            { "account": "Professional Fees", "side": "debit", "amount": "50000" },
+            { "account": "TDS Payable", "side": "credit", "amount": "5000" },
+            { "account": "Bank", "side": "credit", "amount": "45000" }
+          ]
+        },
+        {
+          "seq": 4,
+          "narration": "Remitted the net GST to the government (output 54,000 set off against input 36,000).",
+          "hints": ["Close the output GST → debit 54,000.", "Input GST is settled → credit 36,000.", "Bank pays the difference → credit 18,000."],
+          "expectedJournal": [
+            { "account": "Output GST", "side": "debit", "amount": "54000" },
+            { "account": "Input GST", "side": "credit", "amount": "36000" },
+            { "account": "Bank", "side": "credit", "amount": "18000" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,523 @@
+{
+  "questions": [
+    {
+      "id": "as_01",
+      "type": "mcq",
+      "difficulty": "beginner",
+      "stem": "Which of the following is a liability?",
+      "options": [
+        { "key": "A", "text": "Cash in the bank" },
+        { "key": "B", "text": "Money owed to a supplier" },
+        { "key": "C", "text": "Inventory held for sale" },
+        { "key": "D", "text": "Machinery owned by the business" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "A liability is an obligation to pay an outsider. Supplier dues are a liability; cash, inventory and machinery are assets.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Cash is an asset the business owns." },
+        { "key": "C", "why": "Inventory is an asset that will bring future benefit." },
+        { "key": "D", "why": "Machinery is a non-current asset." }
+      ],
+      "hint": "Ask: does the business owe this to someone?",
+      "tags": ["terminology"],
+      "skills": ["foundation"],
+      "marks": 1,
+      "estimatedSeconds": 45
+    },
+    {
+      "id": "as_02",
+      "type": "mcq",
+      "difficulty": "beginner",
+      "stem": "Capital contributed by the owner increases which side of the accounting equation?",
+      "options": [
+        { "key": "A", "text": "Assets" },
+        { "key": "B", "text": "Liabilities" },
+        { "key": "C", "text": "Capital" },
+        { "key": "D", "text": "Expenses" }
+      ],
+      "answer": { "keys": ["C"] },
+      "explanation": "Capital is the owner's claim. Introducing capital increases the Capital element of Assets = Liabilities + Capital (and typically assets too).",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Cash does increase, but capital is the element directly credited." },
+        { "key": "B", "why": "Capital is not owed to outsiders." },
+        { "key": "D", "why": "Capital is not an expense." }
+      ],
+      "hint": "Who does the business owe the capital to?",
+      "tags": ["equation"],
+      "skills": ["foundation"],
+      "marks": 1,
+      "estimatedSeconds": 45
+    },
+    {
+      "id": "as_03",
+      "type": "numerical",
+      "difficulty": "easy",
+      "stem": "Assets are ₹6,00,000 and liabilities are ₹2,50,000. What is the capital (in ₹)?",
+      "answer": { "value": "350000", "accepted": ["350000", "3,50,000", "350000.00"] },
+      "explanation": "Capital = Assets - Liabilities = 6,00,000 - 2,50,000 = 3,50,000.",
+      "hint": "Rearrange A = L + C.",
+      "tags": ["equation"],
+      "skills": ["foundation"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_04",
+      "type": "true_false",
+      "difficulty": "beginner",
+      "stem": "The going concern concept assumes the business will continue operating for the foreseeable future.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "answer": { "keys": ["A"] },
+      "explanation": "Going concern is the assumption that the business will continue long enough to use its assets and settle its liabilities in the normal course.",
+      "whyOthersWrong": [
+        { "key": "B", "why": "The statement correctly defines going concern." }
+      ],
+      "tags": ["concepts"],
+      "skills": ["foundation"],
+      "marks": 1,
+      "estimatedSeconds": 30
+    },
+    {
+      "id": "as_05",
+      "type": "mcq",
+      "difficulty": "beginner",
+      "stem": "Which of the following is recorded as a DEBIT?",
+      "options": [
+        { "key": "A", "text": "Increase in capital" },
+        { "key": "B", "text": "Increase in a liability" },
+        { "key": "C", "text": "Increase in an expense" },
+        { "key": "D", "text": "Increase in income" }
+      ],
+      "answer": { "keys": ["C"] },
+      "explanation": "Expenses increase on the debit side. Capital, liabilities and income increase on the credit side.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Capital increases are credits." },
+        { "key": "B", "why": "Liabilities increase on the credit side." },
+        { "key": "D", "why": "Income increases are credits." }
+      ],
+      "hint": "DEAD = Drawings, Expenses, Assets, Decreases in liabilities.",
+      "tags": ["debit-credit"],
+      "skills": ["debit_credit"],
+      "marks": 1,
+      "estimatedSeconds": 45
+    },
+    {
+      "id": "as_06",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Goods are purchased for cash. What is the correct entry?",
+      "options": [
+        { "key": "A", "text": "Debit cash, credit purchases" },
+        { "key": "B", "text": "Debit purchases, credit cash" },
+        { "key": "C", "text": "Debit purchases, credit sales" },
+        { "key": "D", "text": "Debit inventory, credit sales" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Purchases (expense) increase → debit; cash (asset) decreases → credit.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Cash goes out, so it is credited, not debited." },
+        { "key": "C", "why": "No sale has occurred." },
+        { "key": "D", "why": "No sale has occurred; the payment is in cash." }
+      ],
+      "hint": "What increased and what decreased?",
+      "tags": ["debit-credit"],
+      "skills": ["debit_credit"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_07",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Which account normally has a CREDIT balance?",
+      "options": [
+        { "key": "A", "text": "Cash" },
+        { "key": "B", "text": "Sales revenue" },
+        { "key": "C", "text": "Machinery" },
+        { "key": "D", "text": "Rent expense" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Income accounts increase on the credit side, so Sales normally has a credit balance. Assets and expenses have debit balances.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Cash is an asset — debit balance." },
+        { "key": "C", "why": "Machinery is an asset — debit balance." },
+        { "key": "D", "why": "Rent is an expense — debit balance." }
+      ],
+      "hint": "Which one is income?",
+      "tags": ["debit-credit"],
+      "skills": ["debit_credit"],
+      "marks": 1,
+      "estimatedSeconds": 45
+    },
+    {
+      "id": "as_08",
+      "type": "true_false",
+      "difficulty": "easy",
+      "stem": "A decrease in a liability is recorded as a debit.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "answer": { "keys": ["A"] },
+      "explanation": "Liabilities increase on the credit side, so decreases are debits.",
+      "whyOthersWrong": [
+        { "key": "B", "why": "Only increases in liabilities are credits." }
+      ],
+      "tags": ["debit-credit"],
+      "skills": ["debit_credit"],
+      "marks": 1,
+      "estimatedSeconds": 40
+    },
+    {
+      "id": "as_09",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Capital of ₹1,00,000 is introduced in cash. The journal entry is:",
+      "options": [
+        { "key": "A", "text": "Debit Capital, Credit Cash" },
+        { "key": "B", "text": "Debit Cash, Credit Capital" },
+        { "key": "C", "text": "Debit Cash, Credit Bank" },
+        { "key": "D", "text": "Debit Capital, Credit Bank" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Cash (asset) increases → debit; Capital (owner's claim) increases → credit.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Capital increasing is a credit, not a debit." },
+        { "key": "C", "why": "No bank account is involved." },
+        { "key": "D", "why": "Both the sides and the accounts are wrong." }
+      ],
+      "tags": ["journal"],
+      "skills": ["journal"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_10",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Rent of ₹15,000 is paid by cheque. What is the entry?",
+      "options": [
+        { "key": "A", "text": "Debit Bank, Credit Rent" },
+        { "key": "B", "text": "Debit Rent, Credit Bank" },
+        { "key": "C", "text": "Debit Rent, Credit Cash" },
+        { "key": "D", "text": "Debit Cash, Credit Rent" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Rent (expense) increases → debit; payment by cheque reduces the bank account → credit bank.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Bank goes down, so it is credited." },
+        { "key": "C", "why": "Payment was by cheque — bank, not cash." },
+        { "key": "D", "why": "That describes receiving rent in cash." }
+      ],
+      "tags": ["journal"],
+      "skills": ["journal"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_11",
+      "type": "mcq",
+      "difficulty": "intermediate",
+      "stem": "Goods are sold on credit to a customer. The entry:",
+      "options": [
+        { "key": "A", "text": "Debit customer, credit cash" },
+        { "key": "B", "text": "Debit customer, credit sales" },
+        { "key": "C", "text": "Debit sales, credit customer" },
+        { "key": "D", "text": "Debit cash, credit sales" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "The customer (receiver of goods) is debited; Sales (income) is credited. Cash moves only when payment arrives.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "No cash moved in a credit sale." },
+        { "key": "C", "why": "That reverses the entry and misstates income." },
+        { "key": "D", "why": "This is a cash sale, not a credit sale." }
+      ],
+      "tags": ["journal"],
+      "skills": ["journal"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_12",
+      "type": "fill_blank",
+      "difficulty": "intermediate",
+      "stem": "A journal entry must have equal total ______ and total credits.",
+      "answer": { "accepted": ["debits", "debit", "debit amounts"] },
+      "explanation": "Double entry requires total debits to equal total credits in every journal entry.",
+      "tags": ["journal"],
+      "skills": ["journal"],
+      "marks": 1,
+      "estimatedSeconds": 40
+    },
+    {
+      "id": "as_13",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "An account's debit side totals ₹50,000 and credit side ₹35,000. The balance is:",
+      "options": [
+        { "key": "A", "text": "Debit ₹15,000" },
+        { "key": "B", "text": "Credit ₹15,000" },
+        { "key": "C", "text": "Debit ₹85,000" },
+        { "key": "D", "text": "Credit ₹85,000" }
+      ],
+      "answer": { "keys": ["A"] },
+      "explanation": "Debits (50,000) exceed credits (35,000) by 15,000, so the balance is a debit of ₹15,000.",
+      "whyOthersWrong": [
+        { "key": "B", "why": "The balance sits on the larger side — debit." },
+        { "key": "C", "why": "That is the total of both sides, not the balance." },
+        { "key": "D", "why": "Both the side and the amount are wrong." }
+      ],
+      "tags": ["ledger"],
+      "skills": ["ledger"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_14",
+      "type": "true_false",
+      "difficulty": "beginner",
+      "stem": "An asset account normally has a credit balance.",
+      "options": [
+        { "key": "A", "text": "True" },
+        { "key": "B", "text": "False" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Assets increase with debits, so asset accounts normally show debit balances.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Assets are debited when they increase." }
+      ],
+      "tags": ["ledger"],
+      "skills": ["ledger"],
+      "marks": 1,
+      "estimatedSeconds": 40
+    },
+    {
+      "id": "as_15",
+      "type": "numerical",
+      "difficulty": "easy",
+      "stem": "A trial balance has debits of ₹1,20,000 and credits of ₹95,000. What is the missing balancing credit figure (in ₹)?",
+      "answer": { "value": "25000", "accepted": ["25000", "25,000", "25000.00"] },
+      "explanation": "Missing credit = 1,20,000 - 95,000 = 25,000.",
+      "hint": "Debits must equal credits.",
+      "tags": ["trial-balance"],
+      "skills": ["trial_balance"],
+      "marks": 1,
+      "estimatedSeconds": 75
+    },
+    {
+      "id": "as_16",
+      "type": "mcq",
+      "difficulty": "intermediate",
+      "stem": "A balanced trial balance does NOT detect:",
+      "options": [
+        { "key": "A", "text": "Posting a sale to the purchases account" },
+        { "key": "B", "text": "Omitting an entire journal entry" },
+        { "key": "C", "text": "Posting ₹500 as ₹50 on both sides" },
+        { "key": "D", "text": "All of the above" }
+      ],
+      "answer": { "keys": ["D"] },
+      "explanation": "Errors that keep debits equal to credits — wrong account, full omission, or equal-sided wrong amounts — are invisible to the trial balance.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "A wrong-account error still balances." },
+        { "key": "B", "why": "A fully omitted entry removes equal debits and credits." },
+        { "key": "C", "why": "Equal-sided wrong amounts still balance." }
+      ],
+      "hint": "Which errors leave debits equal to credits?",
+      "tags": ["trial-balance"],
+      "skills": ["trial_balance"],
+      "marks": 1,
+      "estimatedSeconds": 75
+    },
+    {
+      "id": "as_17",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Where do trade payables (creditors) appear in the balance sheet?",
+      "options": [
+        { "key": "A", "text": "Current assets" },
+        { "key": "B", "text": "Current liabilities" },
+        { "key": "C", "text": "Non-current assets" },
+        { "key": "D", "text": "Capital" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Trade payables are amounts the business owes to suppliers, expected to be settled within the operating cycle — current liabilities.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Assets are what the business owns." },
+        { "key": "C", "why": "Payables are short-term obligations." },
+        { "key": "D", "why": "Capital is the owner's claim." }
+      ],
+      "hint": "Who is owed money?",
+      "tags": ["financial-statements"],
+      "skills": ["financial_statements"],
+      "marks": 1,
+      "estimatedSeconds": 45
+    },
+    {
+      "id": "as_18",
+      "type": "numerical",
+      "difficulty": "intermediate",
+      "stem": "Sales ₹4,00,000; opening stock ₹40,000; purchases ₹2,40,000; closing stock ₹60,000. What is the gross profit (in ₹)?",
+      "answer": { "value": "180000", "accepted": ["180000", "1,80,000", "180000.00"] },
+      "explanation": "COGS = 40,000 + 2,40,000 - 60,000 = 2,20,000. Gross profit = 4,00,000 - 2,20,000 = 1,80,000.",
+      "hint": "COGS = opening stock + purchases - closing stock.",
+      "tags": ["final-accounts"],
+      "skills": ["financial_statements"],
+      "marks": 2,
+      "estimatedSeconds": 120
+    },
+    {
+      "id": "as_19",
+      "type": "mcq",
+      "difficulty": "intermediate",
+      "stem": "Insurance of ₹12,000 was paid; ₹3,000 covers next year. How is it treated?",
+      "options": [
+        { "key": "A", "text": "P&L ₹12,000; no balance sheet item" },
+        { "key": "B", "text": "P&L ₹9,000; prepaid insurance ₹3,000 as an asset" },
+        { "key": "C", "text": "P&L ₹9,000; prepaid insurance ₹3,000 as a liability" },
+        { "key": "D", "text": "P&L ₹12,000; liability ₹3,000" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Only ₹9,000 belongs to this year. The ₹3,000 prepayment is carried forward as a current asset.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "The prepaid portion must not hit this year's P&L." },
+        { "key": "C", "why": "A prepayment is an asset, not a liability." },
+        { "key": "D", "why": "The full amount is not this year's expense." }
+      ],
+      "tags": ["adjustments"],
+      "skills": ["financial_statements"],
+      "marks": 1,
+      "estimatedSeconds": 75
+    },
+    {
+      "id": "as_20",
+      "type": "mcq",
+      "difficulty": "intermediate",
+      "stem": "Equipment costs ₹1,00,000, residual value ₹10,000, life 5 years. Straight-line depreciation per year is:",
+      "options": [
+        { "key": "A", "text": "₹20,000" },
+        { "key": "B", "text": "₹18,000" },
+        { "key": "C", "text": "₹22,000" },
+        { "key": "D", "text": "₹10,000" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "(1,00,000 - 10,000) / 5 = 90,000 / 5 = 18,000 per year.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "That ignores the residual value." },
+        { "key": "C", "why": "That adds rather than subtracts residual value." },
+        { "key": "D", "why": "That is just the residual value." }
+      ],
+      "tags": ["depreciation"],
+      "skills": ["financial_statements"],
+      "marks": 1,
+      "estimatedSeconds": 75
+    },
+    {
+      "id": "as_21",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Which pair is part of the golden rules of debit and credit?",
+      "options": [
+        { "key": "A", "text": "Debit the giver, credit the receiver" },
+        { "key": "B", "text": "Debit what comes in, credit what goes out" },
+        { "key": "C", "text": "Debit all incomes, credit all expenses" },
+        { "key": "D", "text": "Debit liabilities, credit assets" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "For real accounts: debit what comes in, credit what goes out. The other pairings are reversed or wrong.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "It is the receiver who is debited and the giver who is credited." },
+        { "key": "C", "why": "Expenses are debited and incomes credited." },
+        { "key": "D", "why": "Assets are debited when they increase; liabilities credited." }
+      ],
+      "tags": ["debit-credit"],
+      "skills": ["debit_credit"],
+      "marks": 1,
+      "estimatedSeconds": 45
+    },
+    {
+      "id": "as_22",
+      "type": "mcq",
+      "difficulty": "easy",
+      "stem": "Under GST, output GST on a sale is:",
+      "options": [
+        { "key": "A", "text": "A receivable from the government" },
+        { "key": "B", "text": "A liability to be remitted" },
+        { "key": "C", "text": "An expense of the business" },
+        { "key": "D", "text": "Part of sales revenue" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Output GST is collected from customers and remitted to the government, so it is a liability until paid. Sales are recorded net of GST.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "Input GST is the receivable; output GST is payable." },
+        { "key": "C", "why": "GST collected is not a cost to the business." },
+        { "key": "D", "why": "Sales are recorded net of GST." }
+      ],
+      "tags": ["gst"],
+      "skills": ["tax_awareness"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_23",
+      "type": "numerical",
+      "difficulty": "intermediate",
+      "stem": "Output GST collected is ₹30,000 and input GST paid is ₹18,000. What GST is payable to the government (in ₹)?",
+      "answer": { "value": "12000", "accepted": ["12000", "12,000", "12000.00"] },
+      "explanation": "GST payable = 30,000 - 18,000 = 12,000.",
+      "hint": "Set off input GST against output GST.",
+      "tags": ["gst"],
+      "skills": ["tax_awareness"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_24",
+      "type": "mcq",
+      "difficulty": "advanced",
+      "stem": "In consolidated financial statements, which is eliminated?",
+      "options": [
+        { "key": "A", "text": "Intra-group sales and receivables" },
+        { "key": "B", "text": "Sales to external customers" },
+        { "key": "C", "text": "External trade payables" },
+        { "key": "D", "text": "External borrowings" }
+      ],
+      "answer": { "keys": ["A"] },
+      "explanation": "Consolidation eliminates intra-group balances, transactions and unrealised profits so the group is reported as a single economic entity.",
+      "whyOthersWrong": [
+        { "key": "B", "why": "External sales remain in the consolidated statements." },
+        { "key": "C", "why": "External payables remain." },
+        { "key": "D", "why": "External borrowings remain." }
+      ],
+      "tags": ["consolidation"],
+      "skills": ["advanced"],
+      "marks": 1,
+      "estimatedSeconds": 60
+    },
+    {
+      "id": "as_25",
+      "type": "mcq",
+      "difficulty": "advanced",
+      "stem": "Unrealised profit on inventory sold by a parent to its subsidiary is eliminated in consolidation because:",
+      "options": [
+        { "key": "A", "text": "The goods were never sold" },
+        { "key": "B", "text": "Profit is only recognised when the inventory is sold outside the group" },
+        { "key": "C", "text": "The subsidiary has no profit" },
+        { "key": "D", "text": "The parent cannot earn from its subsidiary" }
+      ],
+      "answer": { "keys": ["B"] },
+      "explanation": "Within a group, a transfer is not an arm's-length sale. Profit on inventory still held inside the group is unrealised and eliminated until the goods leave the group.",
+      "whyOthersWrong": [
+        { "key": "A", "why": "The goods were physically transferred, but the profit is unrealised." },
+        { "key": "C", "why": "The subsidiary's profit is irrelevant to this adjustment." },
+        { "key": "D", "why": "The group can earn from transfers, but the profit is deferred." }
+      ],
+      "tags": ["consolidation"],
+      "skills": ["advanced"],
+      "marks": 1,
+      "estimatedSeconds": 75
+    }
+  ]
+}

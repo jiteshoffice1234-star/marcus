@@ -1,0 +1,253 @@
+{
+  "sections": [
+    {
+      "id": "ref_accounting_rules",
+      "title": "Accounting Rules",
+      "description": "The golden rules of double entry.",
+      "items": [
+        {
+          "title": "Golden rules (traditional)",
+          "body": "Real accounts: Debit what comes in, Credit what goes out. Personal accounts: Debit the receiver, Credit the giver. Nominal accounts: Debit expenses and losses, Credit incomes and gains."
+        },
+        {
+          "title": "Modern rule",
+          "body": "Assets and expenses increase on the debit side; liabilities, capital and income increase on the credit side. Every transaction has equal debits and credits."
+        },
+        {
+          "title": "Fundamental concepts",
+          "body": "Business entity, going concern, accrual, consistency, prudence, materiality and matching — the assumptions that keep accounting consistent and comparable."
+        }
+      ]
+    },
+    {
+      "id": "ref_journal_rules",
+      "title": "Journal Rules",
+      "description": "How to write a correct journal entry.",
+      "items": [
+        {
+          "title": "Format",
+          "body": "Date first, then the account(s) debited, then the account(s) credited (indented, prefixed 'To'), amounts in two columns, and a narration explaining the transaction."
+        },
+        {
+          "title": "Balancing",
+          "body": "Total debits must equal total credits. Compound entries may carry several debits or credits."
+        },
+        {
+          "title": "Common entries",
+          "body": "Cash sale: Dr Cash / Cr Sales. Credit purchase: Dr Purchases / Cr Supplier. Payment to supplier: Dr Supplier / Cr Bank. Depreciation: Dr Depreciation Expense / Cr Accumulated Depreciation."
+        }
+      ]
+    },
+    {
+      "id": "ref_formulas",
+      "title": "Key Formulas",
+      "description": "The formulas used throughout the curriculum.",
+      "items": [
+        {
+          "title": "Accounting equation",
+          "body": "Assets = Liabilities + Capital.",
+          "formula": "A = L + C"
+        },
+        {
+          "title": "Cost of goods sold",
+          "body": "Opening stock + purchases - closing stock.",
+          "formula": "COGS = OS + P - CS"
+        },
+        {
+          "title": "Gross profit",
+          "body": "Sales - cost of goods sold.",
+          "formula": "GP = Sales - COGS"
+        },
+        {
+          "title": "Straight-line depreciation",
+          "body": "(Cost - residual value) ÷ useful life.",
+          "formula": "D = (C - R) / n"
+        },
+        {
+          "title": "Reducing-balance depreciation",
+          "body": "Fixed % of the written-down value each year.",
+          "formula": "D = WDV × r"
+        },
+        {
+          "title": "Cash from operations (indirect)",
+          "body": "Net profit + non-cash items - increase in current assets + increase in current liabilities.",
+          "formula": "CFO = NP + Dep - ΔCA + ΔCL"
+        },
+        {
+          "title": "GST payable",
+          "body": "Output GST - input GST (set off and remit the difference).",
+          "formula": "GST payable = OGST - IGST"
+        }
+      ]
+    },
+    {
+      "id": "ref_ratios",
+      "title": "Ratios",
+      "description": "The ratios used in financial statement analysis.",
+      "items": [
+        {
+          "title": "Current ratio",
+          "body": "Current assets ÷ current liabilities. A common benchmark is 2:1.",
+          "formula": "CA / CL"
+        },
+        {
+          "title": "Quick (acid-test) ratio",
+          "body": "(Current assets - inventory) ÷ current liabilities. A benchmark near 1:1.",
+          "formula": "(CA - Inv) / CL"
+        },
+        {
+          "title": "Debt-equity ratio",
+          "body": "Total debt ÷ shareholders' funds. Measures financial leverage.",
+          "formula": "Debt / Equity"
+        },
+        {
+          "title": "Gross margin",
+          "body": "Gross profit ÷ sales.",
+          "formula": "GP / Sales"
+        },
+        {
+          "title": "Net margin",
+          "body": "Net profit ÷ sales.",
+          "formula": "NP / Sales"
+        },
+        {
+          "title": "ROCE",
+          "body": "Operating profit ÷ capital employed.",
+          "formula": "OP / CE"
+        },
+        {
+          "title": "Inventory turnover",
+          "body": "Cost of goods sold ÷ average inventory.",
+          "formula": "COGS / Avg Inv"
+        },
+        {
+          "title": "Receivables days",
+          "body": "Average receivables ÷ credit sales × 365.",
+          "formula": "(AR / Sales) × 365"
+        }
+      ]
+    },
+    {
+      "id": "ref_fs_concepts",
+      "title": "Financial Statement Concepts",
+      "description": "How the statements fit together.",
+      "items": [
+        {
+          "title": "P&L vs balance sheet",
+          "body": "The P&L covers a period (performance); the balance sheet is a snapshot at a date (position). Net profit flows from the P&L into capital in the balance sheet."
+        },
+        {
+          "title": "Accruals and prepayments",
+          "body": "Outstanding expenses are added to the P&L expense and shown as a liability. Prepayments are deducted and shown as an asset."
+        },
+        {
+          "title": "Closing stock",
+          "body": "Appears on the credit side of the trading account (reduces COGS) and as a current asset."
+        },
+        {
+          "title": "Profit is not cash",
+          "body": "Credit sales and inventory build-up create profit without cash. Always read the P&L with the cash flow statement."
+        }
+      ]
+    },
+    {
+      "id": "ref_cashflow",
+      "title": "Cash Flow Concepts",
+      "description": "Operating, investing and financing.",
+      "items": [
+        {
+          "title": "Three sections",
+          "body": "Operating (core business), investing (long-term assets), financing (capital, loans, dividends)."
+        },
+        {
+          "title": "Indirect method",
+          "body": "Start with net profit, add back non-cash items (depreciation), deduct increases in current assets, add increases in current liabilities."
+        },
+        {
+          "title": "Direct method",
+          "body": "Cash received from customers minus cash paid to suppliers and employees — simpler to understand, harder to compile."
+        }
+      ]
+    },
+    {
+      "id": "ref_gst",
+      "title": "GST Accounting Concepts",
+      "description": "Input, output and set-off.",
+      "items": [
+        {
+          "title": "Output GST",
+          "body": "GST collected on sales — a liability until remitted. Sales are recorded net of GST."
+        },
+        {
+          "title": "Input GST",
+          "body": "GST paid on purchases — a receivable from the government until set off."
+        },
+        {
+          "title": "Set-off and remittance",
+          "body": "Set input GST against output GST; remit the net difference within the due date."
+        }
+      ]
+    },
+    {
+      "id": "ref_tds",
+      "title": "TDS Accounting Concepts",
+      "description": "Tax deducted at source.",
+      "items": [
+        {
+          "title": "Deduction",
+          "body": "Deduct tax at source on specified payments (salaries, rent, professional fees) and deposit it with the government."
+        },
+        {
+          "title": "Entries",
+          "body": "Debit the full expense; credit TDS Payable and the net to bank. TDS is the payee's tax collected in advance — not the payer's expense."
+        }
+      ]
+    },
+    {
+      "id": "ref_consolidation",
+      "title": "Consolidation Concepts",
+      "description": "The single economic entity.",
+      "items": [
+        {
+          "title": "The consolidation process",
+          "body": "Combine line items, eliminate the investment against the subsidiary's equity, remove intra-group balances and transactions, and recognise non-controlling interests."
+        },
+        {
+          "title": "Unrealised profit",
+          "body": "Profit on intra-group transfers of inventory still held within the group is eliminated until the goods are sold to outsiders."
+        },
+        {
+          "title": "Goodwill",
+          "body": "Consideration + NCI - identifiable net assets at fair value. Tested for impairment annually, never amortised."
+        }
+      ]
+    },
+    {
+      "id": "ref_ind_as",
+      "title": "Ind AS Concepts",
+      "description": "Indian Accounting Standards (converged with IFRS).",
+      "items": [
+        {
+          "title": "Substance over form",
+          "body": "Report the economic reality of a transaction, not merely its legal form."
+        },
+        {
+          "title": "Revenue (Ind AS 115)",
+          "body": "Five-step model: contract, performance obligations, transaction price, allocation, recognition over time or at a point in time."
+        },
+        {
+          "title": "Leases (Ind AS 116)",
+          "body": "Lessees recognise right-of-use assets and lease liabilities for virtually all leases."
+        },
+        {
+          "title": "Deferred tax (Ind AS 12)",
+          "body": "Recognise deferred tax on temporary differences between carrying amount and tax base."
+        },
+        {
+          "title": "Goodwill (Ind AS 36)",
+          "body": "Impairment-only approach; goodwill is never amortised."
+        }
+      ]
+    }
+  ]
+}

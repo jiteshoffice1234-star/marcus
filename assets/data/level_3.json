@@ -1,0 +1,445 @@
+{
+  "levelId": "level_3",
+  "subjects": [
+    {
+      "id": "l3_adv",
+      "slug": "advanced-accounting",
+      "title": "Advanced Accounting",
+      "description": "Company, partnership, branch and departmental accounting, consolidation, business combinations, statement analysis and standards.",
+      "chapters": [
+        {
+          "id": "l3_adv_ch1",
+          "slug": "company-accounts",
+          "title": "Company Accounts",
+          "description": "Share capital, reserves and the presentation of company financial statements.",
+          "topics": [
+            {
+              "id": "l3_adv_ch1_t1",
+              "slug": "share-capital",
+              "title": "Share Capital & Reserves",
+              "description": "Equity share capital, reserves and surplus.",
+              "lesson": {
+                "id": "l3_adv_ch1_t1_lesson",
+                "title": "Company Equity",
+                "summary": "Equity share capital, securities premium, reserves and how they appear in the balance sheet.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "Company capital structure", "body": "A company is financed by equity (shareholders) and debt (debentures, loans). Equity share capital is the nominal value of issued shares. Any amount received above nominal value is securities premium — a separate reserve, not distributable as dividend." },
+                  { "type": "concept", "heading": "Reserves & surplus", "body": "Reserves are accumulated profits set aside: capital reserves (from capital gains — not distributable) and revenue reserves (from trading profit — distributable). Retained earnings are the undistributed balance of profits." },
+                  { "type": "example", "heading": "Example", "body": "A company issues 10,000 shares of ₹10 each at ₹15. Equity share capital ₹1,00,000; securities premium ₹50,000. Both appear under Shareholders' Funds." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Record share application/allotment: debit bank, credit share capital (nominal) and securities premium (excess). 2. Present: Equity share capital + Reserves & Surplus under Shareholders' Funds. 3. Check: premium is not available for dividends." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Treating securities premium as distributable profit. Calling a capital reserve a revenue reserve. Forgetting that calls in arrear reduce the share capital receivable." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_company_1",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "A company issues 5,000 shares of ₹10 at ₹14. What is credited to Securities Premium?",
+                  "options": [
+                    { "key": "A", "text": "₹50,000" },
+                    { "key": "B", "text": "₹70,000" },
+                    { "key": "C", "text": "₹20,000" },
+                    { "key": "D", "text": "₹10,000" }
+                  ],
+                  "answer": { "keys": ["C"] },
+                  "explanation": "Premium per share = 14 - 10 = 4. Total premium = 5,000 × 4 = 20,000.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That is the nominal value of the shares." },
+                    { "key": "B", "why": "That is the total amount received." },
+                    { "key": "D", "why": "That is the premium on 2,500 shares." }
+                  ],
+                  "commonMistake": "Crediting the full proceeds to share capital.",
+                  "hint": "Premium = issue price - face value.",
+                  "tags": ["company-accounts"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 75
+                },
+                {
+                  "id": "l3_q_company_2",
+                  "type": "true_false",
+                  "difficulty": "easy",
+                  "stem": "Securities premium can be distributed as a dividend.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Securities premium is a capital reserve; it is not available for dividend distribution (it may be used for specified purposes such as bonus issues and buy-backs).",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Premium is a capital reserve with restricted uses." }
+                  ],
+                  "commonMistake": "Confusing capital and revenue reserves.",
+                  "hint": "Capital reserves have restricted uses.",
+                  "tags": ["company-accounts"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l3_adv_ch2",
+          "slug": "partnership-accounts",
+          "title": "Partnership Accounts",
+          "description": "Capital, profit sharing, goodwill.",
+          "topics": [
+            {
+              "id": "l3_adv_ch2_t1",
+              "slug": "partnership-basics",
+              "title": "Partnership Accounting",
+              "description": "Capital and current accounts, profit sharing and interest.",
+              "lesson": {
+                "id": "l3_adv_ch2_t1_lesson",
+                "title": "Accounting for Partnerships",
+                "summary": "Fixed vs fluctuating capital, profit distribution, interest on capital and drawings.",
+                "estimatedMinutes": 10,
+                "sections": [
+                  { "type": "concept", "heading": "Fixed vs fluctuating capital", "body": "With fixed capital, each partner's capital account stays constant and all transactions (profit share, drawings, interest) run through a separate current account. With fluctuating capital, everything runs through the capital account itself." },
+                  { "type": "concept", "heading": "Profit distribution", "body": "Profit is shared in the agreed ratio after charging: interest on capital (if agreed), salaries/commission to partners, and after deducting interest on drawings. A partner's share can be negative (deficit) if the firm makes a loss." },
+                  { "type": "example", "heading": "Example", "body": "A and B share 3:2. Profit ₹1,00,000; interest on capital: A ₹6,000, B ₹4,000. Remaining profit (90,000) is split 54,000 / 36,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Credit each partner's current account with interest on capital. 2. Debit interest on drawings. 3. Divide the remaining profit in the PSR. 4. Present each partner's current account balance in the balance sheet." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Forgetting to allow interest on capital before dividing profit. Charging interest on drawings in the wrong ratio. Using fixed capital without a current account." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_partnership_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Partners X and Y share profits 3:2. Profit after all adjustments is ₹75,000. What is X's share (in ₹)?",
+                  "answer": { "value": "45000", "accepted": ["45000", "45,000", "45000.00"] },
+                  "explanation": "X's share = 3/5 × 75,000 = 45,000.",
+                  "commonMistake": "Using the wrong ratio fraction.",
+                  "hint": "3:2 means X gets 3 of every 5 parts.",
+                  "tags": ["partnership"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 60
+                },
+                {
+                  "id": "l3_q_partnership_2",
+                  "type": "mcq",
+                  "difficulty": "intermediate",
+                  "stem": "In the fixed capital method, a partner's share of profit is credited to:",
+                  "options": [
+                    { "key": "A", "text": "The capital account" },
+                    { "key": "B", "text": "The current account" },
+                    { "key": "C", "text": "The loan account" },
+                    { "key": "D", "text": "The profit & loss account" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "With fixed capital, all profit-related transactions pass through the partner's current account; the capital account stays constant.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "That is the fluctuating capital method." },
+                    { "key": "C", "why": "A loan account records amounts lent to the firm." },
+                    { "key": "D", "why": "The P&L is where the profit is computed, not credited to partners." }
+                  ],
+                  "commonMistake": "Mixing fixed and fluctuating capital methods.",
+                  "hint": "Fixed capital means the capital account never changes.",
+                  "tags": ["partnership"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l3_adv_ch3",
+          "slug": "branch-departmental",
+          "title": "Branch & Departmental Accounts",
+          "description": "Branch and departmental accounting.",
+          "topics": [
+            {
+              "id": "l3_adv_ch3_t1",
+              "slug": "branch-accounts",
+              "title": "Branch & Departmental Accounts",
+              "description": "Debtor-system branch accounting and departmental results.",
+              "lesson": {
+                "id": "l3_adv_ch3_t1_lesson",
+                "title": "Branch and Departmental Accounting",
+                "summary": "Debtor system for branches, and computing departmental gross profit.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "Branch accounts", "body": "For an independent (debtor-system) branch, the head office maintains a Branch Account and tracks goods sent, cash received, expenses and closing stock to derive the branch result. Branch debtors are controlled through the Branch Debtors Account." },
+                  { "type": "concept", "heading": "Departmental accounts", "body": "Each department is a profit centre: revenue, direct costs and direct expenses are tracked per department. Common costs are apportioned on a suitable basis (sales, floor area, headcount). Inter-departmental transfers are recorded at cost or transfer price." },
+                  { "type": "example", "heading": "Example", "body": "Department A sales ₹5,00,000, direct costs ₹3,00,000; Department B sales ₹3,00,000, direct costs ₹2,10,000. Common rent ₹60,000 apportioned by sales (5:3): A ₹37,500, B ₹22,500." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Track sales, opening stock, goods transferred, purchases and closing stock per department. 2. Compute gross profit per department. 3. Apportion common expenses on a defensible basis. 4. Report net profit per department." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Apportioning common costs arbitrarily. Ignoring inter-departmental transfers when computing stock. Treating goods sent to branch as sales." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_branch_1",
+                  "type": "true_false",
+                  "difficulty": "intermediate",
+                  "stem": "Goods sent by head office to its branch are recorded as sales by the head office.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Goods sent to a branch are an internal transfer, not a sale to an external party. They are not revenue until sold to customers.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "A transfer within the same entity cannot create revenue." }
+                  ],
+                  "commonMistake": "Recognising internal transfers as sales.",
+                  "hint": "Can a business make profit by moving goods to its own branch?",
+                  "tags": ["branch"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 45
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l3_adv_ch4",
+          "slug": "consolidation",
+          "title": "Consolidation & Business Combinations",
+          "description": "Consolidated financial statements.",
+          "topics": [
+            {
+              "id": "l3_adv_ch4_t1",
+              "slug": "consolidation-basics",
+              "title": "Consolidated Financial Statements",
+              "description": "The single economic entity view.",
+              "lesson": {
+                "id": "l3_adv_ch4_t1_lesson",
+                "title": "Consolidation Fundamentals",
+                "summary": "The consolidation process: eliminate the investment, remove intra-group items, recognise NCI.",
+                "estimatedMinutes": 12,
+                "sections": [
+                  { "type": "concept", "heading": "Why consolidate?", "body": "A group is a parent and its subsidiaries. Consolidated statements present the group as one economic entity — one balance sheet and one P&L covering all group companies." },
+                  { "type": "concept", "heading": "The mechanics", "body": "1. Add together the parent's and subsidiaries' assets, liabilities, income and expenses line by line. 2. Eliminate the parent's investment in each subsidiary against the subsidiary's equity. 3. Eliminate intra-group balances (receivables/payables) and transactions (sales, unrealised profits in inventory). 4. Recognise non-controlling interests (NCI) for the share of net assets not owned by the parent." },
+                  { "type": "example", "heading": "Example", "body": "Parent owns 80% of Sub. Sub's equity: share capital 100,000, retained earnings 50,000. Parent's investment 120,000. On consolidation: eliminate 120,000 investment against 80% of Sub's equity (120,000), leaving NCI = 20% × 150,000 = 30,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Combine 100% of both companies' line items. 2. Eliminate the investment against the parent's share of Sub's equity. 3. Remove intra-group balances. 4. Compute NCI (fair value or proportionate share of net assets). 5. Adjust for unrealised profits on intra-group inventory." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Eliminating only the parent's percentage of the subsidiary's equity. Forgetting to remove intra-group sales. Ignoring unrealised profits in ending inventory. Miscomputing NCI's share of post-acquisition profits." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_consol_1",
+                  "type": "numerical",
+                  "difficulty": "advanced",
+                  "stem": "Parent owns 75% of Sub. Sub's equity is ₹4,00,000. Using proportionate NCI, what is the non-controlling interest (in ₹)?",
+                  "answer": { "value": "100000", "accepted": ["100000", "1,00,000", "100000.00"] },
+                  "explanation": "NCI = 25% × 4,00,000 = 1,00,000.",
+                  "commonMistake": "Using the parent's percentage for NCI.",
+                  "hint": "NCI is the share NOT owned by the parent.",
+                  "tags": ["consolidation"],
+                  "skills": ["advanced"],
+                  "marks": 2,
+                  "estimatedSeconds": 90
+                },
+                {
+                  "id": "l3_q_consol_2",
+                  "type": "mcq",
+                  "difficulty": "advanced",
+                  "stem": "Parent sold inventory to Sub at cost + 25% and 40% remains unsold. The unrealised profit to eliminate is:",
+                  "options": [
+                    { "key": "A", "text": "25% of the transfer price of unsold stock" },
+                    { "key": "B", "text": "25% of the cost of unsold stock" },
+                    { "key": "C", "text": "25% of the cost of all goods transferred" },
+                    { "key": "D", "text": "40% of the transfer price" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "The profit margin is on cost: transfer price = 125% of cost, so profit = 25% of cost (equivalently 20% of the transfer price). Only the unsold portion is unrealised, so eliminate 25% of the cost of the unsold stock.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "25% applied to the transfer price overstates the profit (the margin is on cost)." },
+                    { "key": "C", "why": "Only the unsold portion's profit is unrealised, not the whole transfer." },
+                    { "key": "D", "why": "40% is the unsold fraction, not the profit margin." }
+                  ],
+                  "commonMistake": "Applying the margin to the wrong base (transfer price vs cost).",
+                  "hint": "Margin on cost of 25% means profit is 20% of the transfer price.",
+                  "tags": ["consolidation"],
+                  "skills": ["advanced"],
+                  "marks": 2,
+                  "estimatedSeconds": 120
+                }
+              ]
+            },
+            {
+              "id": "l3_adv_ch4_t2",
+              "slug": "business-combinations",
+              "title": "Business Combinations",
+              "description": "Acquisitions and goodwill.",
+              "lesson": {
+                "id": "l3_adv_ch4_t2_lesson",
+                "title": "Business Combinations",
+                "summary": "Purchase consideration, goodwill and bargain purchase.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "What is a business combination?", "body": "A transaction in which one entity obtains control of another. The acquirer recognises the identifiable assets and liabilities of the acquiree at fair value and records any excess of consideration over net assets as goodwill." },
+                  { "type": "concept", "heading": "Goodwill vs bargain purchase", "body": "If consideration exceeds the fair value of identifiable net assets acquired → goodwill (an asset, tested for impairment). If consideration is less → a bargain purchase gain recognised in profit or loss (after reassessment)." },
+                  { "type": "example", "heading": "Example", "body": "Acquirer pays ₹10,00,000 for a company whose identifiable net assets at fair value are ₹8,50,000. Goodwill = 1,50,000." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Measure consideration transferred. 2. Measure identifiable assets acquired and liabilities assumed at fair value. 3. Compute goodwill = consideration - net assets acquired. 4. Recognise NCI at fair value or proportionate share (policy choice)." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Using book values instead of fair values for the acquiree's assets. Forgetting contingent consideration in the purchase price. Amortising goodwill instead of testing for impairment." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_bc_1",
+                  "type": "numerical",
+                  "difficulty": "advanced",
+                  "stem": "Acquirer pays ₹8,00,000 for a company whose identifiable net assets at fair value are ₹6,50,000. What is the goodwill (in ₹)?",
+                  "answer": { "value": "150000", "accepted": ["150000", "1,50,000", "150000.00"] },
+                  "explanation": "Goodwill = 8,00,000 - 6,50,000 = 1,50,000.",
+                  "commonMistake": "Subtracting the wrong way or using book values.",
+                  "hint": "Consideration minus identifiable net assets at fair value.",
+                  "tags": ["business-combinations"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 75
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "id": "l3_adv_ch5",
+          "slug": "analysis-standards",
+          "title": "Analysis & Standards",
+          "description": "Financial statement analysis, accounting standards and Ind AS.",
+          "topics": [
+            {
+              "id": "l3_adv_ch5_t1",
+              "slug": "statement-analysis",
+              "title": "Financial Statement Analysis",
+              "description": "Ratios that drive decisions.",
+              "lesson": {
+                "id": "l3_adv_ch5_t1_lesson",
+                "title": "Ratio Analysis",
+                "summary": "Profitability, liquidity and solvency ratios.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "Why ratios?", "body": "Ratios make financial statements comparable across time and companies. They answer: is the business profitable? Can it pay its short-term bills? Can it service its debt?" },
+                  { "type": "concept", "heading": "Key ratios", "body": "Current ratio = Current Assets / Current Liabilities (liquidity). Quick ratio excludes inventory. Debt-Equity = Total Debt / Shareholders' Funds (solvency). Gross margin = Gross Profit / Sales. Net margin = Net Profit / Sales. ROCE = Operating Profit / Capital Employed (returns)." },
+                  { "type": "formula", "heading": "Current ratio", "body": "Current Assets ÷ Current Liabilities", "formula": "CA / CL" },
+                  { "type": "example", "heading": "Example", "body": "Current assets ₹6,00,000; current liabilities ₹3,00,000. Current ratio = 2:1 — the business has ₹2 of current assets for every ₹1 of current liabilities." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Pull the figures from the balance sheet. 2. Compute the ratio and compare with the prior year and industry. 3. Investigate the drivers — is a falling current ratio due to rising payables or falling inventory? 4. Present with context, never in isolation." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Comparing ratios without industry context. Mixing up numerator and denominator. Believing one ratio tells the whole story." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_analysis_1",
+                  "type": "numerical",
+                  "difficulty": "intermediate",
+                  "stem": "Current assets are ₹4,50,000 and current liabilities ₹1,80,000. What is the current ratio (to one decimal, e.g. 2.5)?",
+                  "answer": { "value": "2.5", "accepted": ["2.5", "2.50", "2,5"] },
+                  "explanation": "Current ratio = 4,50,000 / 1,80,000 = 2.5.",
+                  "commonMistake": "Inverting the ratio.",
+                  "hint": "Current assets divided by current liabilities.",
+                  "tags": ["ratios"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "estimatedSeconds": 75
+                },
+                {
+                  "id": "l3_q_analysis_2",
+                  "type": "mcq",
+                  "difficulty": "easy",
+                  "stem": "Which ratio measures short-term liquidity excluding inventory?",
+                  "options": [
+                    { "key": "A", "text": "Quick ratio" },
+                    { "key": "B", "text": "Debt-equity ratio" },
+                    { "key": "C", "text": "Gross margin" },
+                    { "key": "D", "text": "ROCE" }
+                  ],
+                  "answer": { "keys": ["A"] },
+                  "explanation": "The quick (acid-test) ratio excludes inventory because it is the least liquid current asset.",
+                  "whyOthersWrong": [
+                    { "key": "B", "why": "Debt-equity measures solvency." },
+                    { "key": "C", "why": "Gross margin measures profitability." },
+                    { "key": "D", "why": "ROCE measures returns on capital." }
+                  ],
+                  "commonMistake": "Confusing liquidity and solvency measures.",
+                  "hint": "It strips out inventory.",
+                  "tags": ["ratios"],
+                  "skills": ["financial_statements"],
+                  "marks": 1,
+                  "estimatedSeconds": 45
+                }
+              ]
+            },
+            {
+              "id": "l3_adv_ch5_t2",
+              "slug": "standards-ind-as",
+              "title": "Accounting Standards & Ind AS",
+              "description": "The framework of reporting.",
+              "lesson": {
+                "id": "l3_adv_ch5_t2_lesson",
+                "title": "Standards and Ind AS",
+                "summary": "What standards do, key Ind AS principles, and why they matter.",
+                "estimatedMinutes": 9,
+                "sections": [
+                  { "type": "concept", "heading": "What standards do", "body": "Accounting standards set the rules for recognition, measurement and disclosure so financial statements are comparable, consistent and reliable. In India, companies report under Indian Accounting Standards (Ind AS), converged with IFRS." },
+                  { "type": "concept", "heading": "Key Ind AS themes", "body": "Substance over form — report the economic reality, not just the legal form. Fair value measurement where required. Revenue recognition over time for long contracts. Leases on the balance sheet (right-of-use assets). Impairment of assets instead of routine amortisation of goodwill." },
+                  { "type": "example", "heading": "Example", "body": "A sale-and-leaseback that is really a financing arrangement must be reported as a financing, not as a sale — substance over form." },
+                  { "type": "worked_solution", "heading": "Worked solution", "body": "1. Identify the transaction's economic substance. 2. Find the applicable standard(s). 3. Apply recognition and measurement requirements. 4. Provide the disclosures the standard requires. 5. Consider materiality." },
+                  { "type": "common_mistakes", "heading": "Common mistakes", "body": "Following the legal form instead of the substance. Applying Indian GAAP rules where Ind AS differs. Omitting required disclosures." }
+                ]
+              },
+              "questions": [
+                {
+                  "id": "l3_q_standards_1",
+                  "type": "true_false",
+                  "difficulty": "intermediate",
+                  "stem": "Ind AS are fully converged with IFRS.",
+                  "options": [
+                    { "key": "A", "text": "True" },
+                    { "key": "B", "text": "False" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Ind AS are converged with IFRS but not identical — India retains certain carve-outs and differences (e.g., in areas like investment property and government grants) plus its own presentation schedules.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Converged does not mean identical; carve-outs exist." }
+                  ],
+                  "commonMistake": "Equating convergence with full adoption.",
+                  "hint": "Converged vs identical — is there a difference?",
+                  "tags": ["ind-as"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 45
+                },
+                {
+                  "id": "l3_q_standards_2",
+                  "type": "mcq",
+                  "difficulty": "advanced",
+                  "stem": "Under Ind AS, goodwill acquired in a business combination is:",
+                  "options": [
+                    { "key": "A", "text": "Amortised over 10 years" },
+                    { "key": "B", "text": "Tested for impairment annually" },
+                    { "key": "C", "text": "Written off immediately" },
+                    { "key": "D", "text": "Never recognised" }
+                  ],
+                  "answer": { "keys": ["B"] },
+                  "explanation": "Ind AS 36 requires goodwill to be tested for impairment annually (or more often if indicators exist) — it is not amortised.",
+                  "whyOthersWrong": [
+                    { "key": "A", "why": "Systematic amortisation of goodwill is not permitted under Ind AS." },
+                    { "key": "C", "why": "Goodwill is an asset, not an immediate write-off." },
+                    { "key": "D", "why": "Goodwill from acquisitions is recognised." }
+                  ],
+                  "commonMistake": "Applying old GAAP amortisation to goodwill.",
+                  "hint": "How is an asset with an indefinite life treated?",
+                  "tags": ["ind-as"],
+                  "skills": ["advanced"],
+                  "marks": 1,
+                  "estimatedSeconds": 60
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
