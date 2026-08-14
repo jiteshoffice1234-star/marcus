@@ -26,7 +26,10 @@ class ChapterScreen extends ConsumerWidget {
         loading: () => const LoadingView(),
         error: (e, _) => ErrorState(message: e.toString()),
         data: (location) {
-          final chapter = location!.chapter;
+          if (location == null) {
+            return const ErrorState(message: 'Chapter not found.');
+          }
+          final chapter = location.chapter;
           return ListView(
             padding: const EdgeInsets.all(AppSpacing.lg),
             children: [

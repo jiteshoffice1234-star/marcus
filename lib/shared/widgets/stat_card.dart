@@ -39,7 +39,7 @@ class StatCard extends StatelessWidget {
                 value,
                 maxLines: 1,
                 overflow: TextOverflow.ellipsis,
-                style: AppTypography.title.copyWith(
+                style: AppTypography.number.copyWith(
                   fontSize: 20,
                   color: AppColors.textPrimaryLight,
                 ),

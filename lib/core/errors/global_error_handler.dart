@@ -1,5 +1,3 @@
-import 'dart:async';
-
 import 'package:flutter/foundation.dart';
 
 import 'app_exception.dart';
@@ -14,9 +12,12 @@ class GlobalErrorHandler {
   static void install({ErrorReporter? reporter}) {
     if (reporter != null) GlobalErrorHandler.reporter = reporter;
 
+    // Note: the closures must reference the static field, not the [reporter]
+    // parameter — install() is called without arguments in main(), and the
+    // static default must remain effective.
     FlutterError.onError = (FlutterErrorDetails details) {
       FlutterError.presentError(details);
-      reporter?.report(
+      GlobalErrorHandler.reporter.report(
         message: details.exceptionAsString(),
         stack: details.stack,
         context: details.library,
@@ -24,17 +25,15 @@ class GlobalErrorHandler {
     };
 
     PlatformDispatcher.instance.onError = (error, stack) {
-      reporter?.report(message: error.toString(), stack: stack);
+      GlobalErrorHandler.reporter.report(
+          message: error.toString(), stack: stack);
       return true; // handled — do not kill the app
     };
 
-    // Catch async errors that would otherwise escape to the zone.
-    runZonedGuarded(
-      () {},
-      (error, stack) {
-        reporter?.report(message: error.toString(), stack: stack);
-      },
-    );
+    // Uncaught async errors in the root zone are routed to
+    // [PlatformDispatcher.onError] above, so no separate zone handler is
+    // needed here. (A runZonedGuarded around `runApp` in main() is the
+    // pattern if zone-scoped handling is ever required.)
   }
 }
 

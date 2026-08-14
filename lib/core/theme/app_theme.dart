@@ -6,16 +6,18 @@ import 'app_typography.dart';
 
 /// Builds the app's [ThemeData] for light and dark mode.
 ///
-/// The design goal: premium, minimal, high readability, strong hierarchy —
-/// suitable for serious accounting students, not a playful consumer app.
+/// The ledger direction: cool paper surfaces, green ink, hairline rules
+/// instead of shadows, and figures that read like a day-book column.
 class AppTheme {
   AppTheme._();
 
   static ThemeData light() => _base(Brightness.light).copyWith(
         scaffoldBackgroundColor: AppColors.surfaceLight,
         colorScheme: const ColorScheme.light(
-          primary: AppColors.indigo600,
+          primary: AppColors.green600,
           onPrimary: Colors.white,
+          primaryContainer: AppColors.green100,
+          onPrimaryContainer: AppColors.green900,
           secondary: AppColors.emerald,
           onSecondary: Colors.white,
           surface: AppColors.cardLight,
@@ -34,17 +36,18 @@ class AppTheme {
           centerTitle: false,
           titleTextStyle: AppTypography.title,
         ),
-        textTheme: _textTheme(AppColors.textPrimaryLight, AppColors.textSecondaryLight),
+        textTheme:
+            _textTheme(AppColors.textPrimaryLight, AppColors.textSecondaryLight),
         navigationBarTheme: NavigationBarThemeData(
           backgroundColor: AppColors.cardLight,
-          indicatorColor: AppColors.indigo100,
+          indicatorColor: AppColors.green100,
           labelTextStyle: WidgetStatePropertyAll(
             AppTypography.caption.copyWith(color: AppColors.textSecondaryLight),
           ),
           iconTheme: WidgetStateProperty.resolveWith(
             (states) => IconThemeData(
               color: states.contains(WidgetState.selected)
-                  ? AppColors.indigo600
+                  ? AppColors.green600
                   : AppColors.textTertiaryLight,
             ),
           ),
@@ -54,8 +57,10 @@ class AppTheme {
   static ThemeData dark() => _base(Brightness.dark).copyWith(
         scaffoldBackgroundColor: AppColors.surfaceDark,
         colorScheme: const ColorScheme.dark(
-          primary: AppColors.indigo400,
-          onPrimary: AppColors.indigo900,
+          primary: AppColors.green300,
+          onPrimary: AppColors.green900,
+          primaryContainer: AppColors.green800,
+          onPrimaryContainer: AppColors.green100,
           secondary: AppColors.emerald,
           onSecondary: AppColors.surfaceDark,
           surface: AppColors.cardDark,
@@ -74,17 +79,18 @@ class AppTheme {
           centerTitle: false,
           titleTextStyle: AppTypography.title,
         ),
-        textTheme: _textTheme(AppColors.textPrimaryDark, AppColors.textSecondaryDark),
+        textTheme:
+            _textTheme(AppColors.textPrimaryDark, AppColors.textSecondaryDark),
         navigationBarTheme: NavigationBarThemeData(
           backgroundColor: AppColors.cardDark,
-          indicatorColor: AppColors.indigo800,
+          indicatorColor: AppColors.green800,
           labelTextStyle: WidgetStatePropertyAll(
             AppTypography.caption.copyWith(color: AppColors.textSecondaryDark),
           ),
           iconTheme: WidgetStateProperty.resolveWith(
             (states) => IconThemeData(
               color: states.contains(WidgetState.selected)
-                  ? AppColors.indigo400
+                  ? AppColors.green300
                   : AppColors.textTertiaryDark,
             ),
           ),
@@ -101,18 +107,23 @@ class AppTheme {
       colorScheme: scheme,
       visualDensity: VisualDensity.standard,
       splashFactory: InkSparkle.splashFactory,
+      fontFamily: AppTypography.kSans,
       fontFamilyFallback: const ['Roboto', 'Helvetica', 'Arial'],
       filledButtonTheme: FilledButtonThemeData(
         style: FilledButton.styleFrom(
           minimumSize: const Size(64, 48),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSpacing.radiusMd)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+          ),
           textStyle: AppTypography.label,
         ),
       ),
       outlinedButtonTheme: OutlinedButtonThemeData(
         style: OutlinedButton.styleFrom(
           minimumSize: const Size(64, 48),
-          shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSpacing.radiusMd)),
+          shape: RoundedRectangleBorder(
+            borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
+          ),
           textStyle: AppTypography.label,
         ),
       ),
@@ -127,28 +138,37 @@ class AppTheme {
         border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
           borderSide: BorderSide(
-            color: brightness == Brightness.dark ? AppColors.dividerDark : AppColors.dividerLight,
+            color: brightness == Brightness.dark
+                ? AppColors.dividerDark
+                : AppColors.dividerLight,
           ),
         ),
         enabledBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
           borderSide: BorderSide(
-            color: brightness == Brightness.dark ? AppColors.dividerDark : AppColors.dividerLight,
+            color: brightness == Brightness.dark
+                ? AppColors.dividerDark
+                : AppColors.dividerLight,
           ),
         ),
         focusedBorder: OutlineInputBorder(
           borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
-          borderSide: const BorderSide(color: AppColors.indigo500, width: 1.6),
+          borderSide: const BorderSide(color: AppColors.green500, width: 1.6),
         ),
-        contentPadding: const EdgeInsets.symmetric(horizontal: AppSpacing.lg, vertical: AppSpacing.md),
+        contentPadding: const EdgeInsets.symmetric(
+            horizontal: AppSpacing.lg, vertical: AppSpacing.md),
       ),
       cardTheme: CardThemeData(
         elevation: 0,
-        color: brightness == Brightness.dark ? AppColors.cardDark : AppColors.cardLight,
+        color: brightness == Brightness.dark
+            ? AppColors.cardDark
+            : AppColors.cardLight,
         shape: RoundedRectangleBorder(
           borderRadius: BorderRadius.circular(AppSpacing.radiusLg),
           side: BorderSide(
-            color: brightness == Brightness.dark ? AppColors.dividerDark : AppColors.dividerLight,
+            color: brightness == Brightness.dark
+                ? AppColors.dividerDark
+                : AppColors.dividerLight,
             width: 1,
           ),
         ),
@@ -157,27 +177,39 @@ class AppTheme {
       chipTheme: ChipThemeData(
         backgroundColor: brightness == Brightness.dark
             ? AppColors.cardDarkElevated
-            : AppColors.indigo100.withValues(alpha: 0.5),
-        side: BorderSide.none,
-        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(AppSpacing.radiusSm)),
+            : AppColors.green100.withValues(alpha: 0.55),
+        side: BorderSide(
+          color: brightness == Brightness.dark
+              ? AppColors.dividerDark
+              : AppColors.dividerLight,
+        ),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(AppSpacing.radiusSm),
+        ),
         labelStyle: AppTypography.caption.copyWith(
-          color: brightness == Brightness.dark ? AppColors.textPrimaryDark : AppColors.textPrimaryLight,
+          color: brightness == Brightness.dark
+              ? AppColors.textPrimaryDark
+              : AppColors.textPrimaryLight,
         ),
       ),
       progressIndicatorTheme: ProgressIndicatorThemeData(
-        color: AppColors.indigo500,
+        color: AppColors.green500,
         linearTrackColor: brightness == Brightness.dark
             ? AppColors.cardDarkElevated
-            : AppColors.indigo100,
+            : AppColors.green100,
       ),
       dividerTheme: DividerThemeData(
-        color: brightness == Brightness.dark ? AppColors.dividerDark : AppColors.dividerLight,
+        color: brightness == Brightness.dark
+            ? AppColors.dividerDark
+            : AppColors.dividerLight,
         thickness: 1,
         space: 1,
       ),
       snackBarTheme: SnackBarThemeData(
         behavior: SnackBarBehavior.floating,
-        backgroundColor: brightness == Brightness.dark ? AppColors.cardDarkElevated : AppColors.indigo900,
+        backgroundColor: brightness == Brightness.dark
+            ? AppColors.cardDarkElevated
+            : AppColors.green900,
         contentTextStyle: AppTypography.bodySmall.copyWith(color: Colors.white),
       ),
       tooltipTheme: const TooltipThemeData(waitDuration: Duration(milliseconds: 400)),

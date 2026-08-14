@@ -10,10 +10,11 @@ class AppSpacing {
   static const double xxl = 32;
   static const double xxxl = 48;
 
-  static const double radiusSm = 8;
-  static const double radiusMd = 12;
-  static const double radiusLg = 16;
-  static const double radiusXl = 24;
+  // Tighter, squared radii — the precise feel of an accounting instrument.
+  static const double radiusSm = 6;
+  static const double radiusMd = 10;
+  static const double radiusLg = 12;
+  static const double radiusXl = 16;
 
   /// Max content width for tablet/desktop layouts.
   static const double contentMaxWidth = 920;

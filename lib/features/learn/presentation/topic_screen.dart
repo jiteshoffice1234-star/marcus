@@ -120,7 +120,7 @@ class _TopicView extends ConsumerWidget {
                 ScaffoldMessenger.of(context).showSnackBar(
                   SnackBar(
                     content: Text(
-                      'Lesson complete! +${unlocked.first.xpReward} XP · Achievement: ${unlocked.first.title}',
+                      'Lesson complete! +20 XP · Achievement unlocked: ${unlocked.first.title}',
                     ),
                   ),
                 );

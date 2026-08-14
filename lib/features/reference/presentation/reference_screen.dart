@@ -71,14 +71,14 @@ class _SectionCard extends StatelessWidget {
                         margin: const EdgeInsets.only(bottom: AppSpacing.sm),
                         padding: const EdgeInsets.all(AppSpacing.md),
                         decoration: BoxDecoration(
-                          color: AppColors.indigo500.withValues(alpha: 0.08),
+                          color: AppColors.green600.withValues(alpha: 0.08),
                           borderRadius:
                               BorderRadius.circular(AppSpacing.radiusMd),
                         ),
                         child: Text(
                           item.formula!,
                           style: AppTypography.label.copyWith(
-                            color: AppColors.indigo600,
+                            color: AppColors.green800,
                           ),
                         ),
                       ),

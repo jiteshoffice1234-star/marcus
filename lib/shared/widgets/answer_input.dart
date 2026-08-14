@@ -37,6 +37,20 @@ class _AnswerInputState extends State<AnswerInput> {
     super.dispose();
   }
 
+  /// AnswerInput State is reused across questions (the widget updates in
+  /// place), so every piece of user input must be reset when the question
+  /// changes — otherwise the previous question's selection/text/journal
+  /// silently leaks into the next one.
+  @override
+  void didUpdateWidget(AnswerInput oldWidget) {
+    super.didUpdateWidget(oldWidget);
+    if (oldWidget.question.id != widget.question.id) {
+      _selected.clear();
+      _textController.clear();
+      _journal = null;
+    }
+  }
+
   void _submit() {
     final q = widget.question;
     switch (q.type) {
@@ -97,6 +111,9 @@ class _AnswerInputState extends State<AnswerInput> {
             _numberField(q),
           QuestionType.fillBlank => _textField(q),
           QuestionType.journalEntry => JournalEntryEditor(
+              // A fresh editor per question: the editor keeps its own line
+              // state, which must not survive into the next question.
+              key: ValueKey(q.id),
               onChanged: (entry) => _journal = entry,
             ),
           _ => _mcqOptions(q),

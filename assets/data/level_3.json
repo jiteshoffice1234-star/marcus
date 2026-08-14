@@ -334,7 +334,7 @@
                   "type": "numerical",
                   "difficulty": "intermediate",
                   "stem": "Current assets are ₹4,50,000 and current liabilities ₹1,80,000. What is the current ratio (to one decimal, e.g. 2.5)?",
-                  "answer": { "value": "2.5", "accepted": ["2.5", "2.50", "2,5"] },
+                  "answer": { "value": "2.5", "accepted": ["2.5", "2.50"] },
                   "explanation": "Current ratio = 4,50,000 / 1,80,000 = 2.5.",
                   "commonMistake": "Inverting the ratio.",
                   "hint": "Current assets divided by current liabilities.",

@@ -207,6 +207,12 @@ class _AssessmentStep extends StatelessWidget {
     if (questions.isEmpty) {
       return const LoadingView(label: 'Preparing your assessment…');
     }
+    // After the last answer the index is advanced to questions.length before
+    // the results step is shown — render a scoring state instead of indexing
+    // out of range.
+    if (index >= questions.length) {
+      return const LoadingView(label: 'Scoring your assessment…');
+    }
     final question = questions[index];
     final progress = (index) / questions.length;
     return Column(

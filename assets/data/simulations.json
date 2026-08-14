@@ -9,7 +9,8 @@
       "industry": "Wholesale trading",
       "levelIndex": 1,
       "openingBalances": {
-        "Cash": "100000"
+        "Cash": "100000",
+        "Capital": "100000"
       },
       "transactions": [
         {
@@ -96,7 +97,8 @@
       "levelIndex": 2,
       "openingBalances": {
         "Bank": "500000",
-        "Cash": "50000"
+        "Cash": "50000",
+        "Capital": "550000"
       },
       "transactions": [
         {

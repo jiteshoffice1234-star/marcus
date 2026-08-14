@@ -1,53 +1,67 @@
 import 'package:flutter/material.dart';
 
-/// Design-system colors for a premium academic + finance interface.
+/// Design-system colors — "The Ledger" direction.
 ///
-/// Palette: deep indigo (trust/finance), emerald (growth/progress),
-/// amber (streaks/energy), coral (errors/attention). Semantic tokens are
-/// referenced by the theme so surfaces never hard-code raw hex values.
+/// The palette is taken from the accountant's own world: cool green-tinted
+/// ledger paper, green-black ink, deep ledger green bindings, the classic
+/// red ink used to mark corrections (reserved for mistakes/errors), and
+/// brass for seals and stamps (streaks, achievements). Money figures are
+/// always typeset in Plex Mono so every number reads like a line in a
+/// day book. Semantic tokens are referenced by the theme so surfaces never
+/// hard-code raw hex values.
 class AppColors {
   AppColors._();
 
-  // Brand
-  static const Color indigo900 = Color(0xFF1A2245);
-  static const Color indigo800 = Color(0xFF232C5B);
-  static const Color indigo700 = Color(0xFF2D3A7A);
-  static const Color indigo600 = Color(0xFF3D4E9E);
-  static const Color indigo500 = Color(0xFF4C5FC0);
-  static const Color indigo400 = Color(0xFF6F7FD4);
-  static const Color indigo300 = Color(0xFF9AA6E4);
-  static const Color indigo200 = Color(0xFFC2CAF0);
-  static const Color indigo100 = Color(0xFFE1E5F8);
+  // Brand — ledger green
+  static const Color green900 = Color(0xFF14301F);
+  static const Color green800 = Color(0xFF1C4130);
+  static const Color green700 = Color(0xFF255641);
+  static const Color green600 = Color(0xFF2E6B4E);
+  static const Color green500 = Color(0xFF3E8E63);
+  static const Color green400 = Color(0xFF5FA87E);
+  static const Color green300 = Color(0xFF8CC3A4);
+  static const Color green200 = Color(0xFFBBDCC8);
+  static const Color green100 = Color(0xFFDEEEE4);
 
   // Semantic accents
-  static const Color emerald = Color(0xFF10B981);
-  static const Color emeraldDark = Color(0xFF0E9F6E);
-  static const Color amber = Color(0xFFF59E0B);
-  static const Color coral = Color(0xFFEF4444);
-  static const Color sky = Color(0xFF0EA5E9);
-  static const Color violet = Color(0xFF8B5CF6);
+  /// Success / progress — a settled, verified green.
+  static const Color emerald = Color(0xFF3E8E63);
+  static const Color emeraldDark = Color(0xFF255641);
 
-  // Neutral surfaces (light)
-  static const Color surfaceLight = Color(0xFFF7F8FC);
+  /// Streaks / achievements — brass seal.
+  static const Color amber = Color(0xFFA87B2F);
+
+  /// Mistakes / errors — the accountant's red correction ink.
+  static const Color coral = Color(0xFFC0452F);
+
+  /// Informational accent — slate blue.
+  static const Color sky = Color(0xFF4E7A8C);
+
+  /// Secondary accent — ink violet.
+  static const Color violet = Color(0xFF6B5B8C);
+
+  // Neutral surfaces (light) — cool ledger paper + ink
+  static const Color surfaceLight = Color(0xFFF3F6F2);
   static const Color cardLight = Colors.white;
-  static const Color textPrimaryLight = Color(0xFF141A2E);
-  static const Color textSecondaryLight = Color(0xFF5A6480);
-  static const Color textTertiaryLight = Color(0xFF8A93AC);
-  static const Color dividerLight = Color(0xFFE6E9F2);
+  static const Color textPrimaryLight = Color(0xFF1B2B23);
+  static const Color textSecondaryLight = Color(0xFF5C6F65);
+  static const Color textTertiaryLight = Color(0xFF83948B);
+  static const Color dividerLight = Color(0xFFDDE5DF);
 
-  // Neutral surfaces (dark)
-  static const Color surfaceDark = Color(0xFF0E1226);
-  static const Color cardDark = Color(0xFF171D38);
-  static const Color cardDarkElevated = Color(0xFF1E2547);
-  static const Color textPrimaryDark = Color(0xFFF2F4FF);
-  static const Color textSecondaryDark = Color(0xFFB3BCD6);
-  static const Color textTertiaryDark = Color(0xFF7C86A6);
-  static const Color dividerDark = Color(0xFF2A3157);
+  // Neutral surfaces (dark) — ink on dark paper
+  static const Color surfaceDark = Color(0xFF0E1512);
+  static const Color cardDark = Color(0xFF151D18);
+  static const Color cardDarkElevated = Color(0xFF1B2620);
+  static const Color textPrimaryDark = Color(0xFFE6EEE8);
+  static const Color textSecondaryDark = Color(0xFFA9BCB0);
+  static const Color textTertiaryDark = Color(0xFF7C8F84);
+  static const Color dividerDark = Color(0xFF24312A);
 
-  // Difficulty accents (stars → CA Final)
-  static const Color diffBeginner = Color(0xFF10B981);
-  static const Color diffEasy = Color(0xFF0EA5E9);
-  static const Color diffIntermediate = Color(0xFFF59E0B);
-  static const Color diffAdvanced = Color(0xFF8B5CF6);
-  static const Color diffCaFinal = Color(0xFFEF4444);
+  // Difficulty accents — the scale rises from calm green to red ink,
+  // so the hardest material is marked with the correction ink.
+  static const Color diffBeginner = Color(0xFF3E8E63);
+  static const Color diffEasy = Color(0xFF4E7A8C);
+  static const Color diffIntermediate = Color(0xFFA87B2F);
+  static const Color diffAdvanced = Color(0xFF6B5B8C);
+  static const Color diffCaFinal = Color(0xFFC0452F);
 }

@@ -52,7 +52,7 @@
                   "difficulty": "ca_final",
                   "stem": "Under Ind AS 115, variable consideration is included in the transaction price only to the extent:",
                   "options": [
-                    { "key": "A", "text": "It is probable that a significant reversal will not occur" },
+                    { "key": "A", "text": "It is highly probable that a significant reversal will not occur" },
                     { "key": "B", "text": "It is certain" },
                     { "key": "C", "text": "It has been received in cash" },
                     { "key": "D", "text": "The customer agrees to it" }

@@ -139,12 +139,12 @@ class _JournalEntryEditorState extends State<JournalEntryEditor> {
             children: [
               Text(
                 'Debits: ${dr == null ? '—' : formatIndian(dr)}',
-                style: AppTypography.caption,
+                style: AppTypography.figures.copyWith(fontSize: 12),
               ),
               const SizedBox(width: AppSpacing.lg),
               Text(
                 'Credits: ${cr == null ? '—' : formatIndian(cr)}',
-                style: AppTypography.caption,
+                style: AppTypography.figures.copyWith(fontSize: 12),
               ),
             ],
           ),

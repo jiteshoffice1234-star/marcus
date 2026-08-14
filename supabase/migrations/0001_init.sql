@@ -590,8 +590,13 @@ create policy "simulations_write" on public.simulation_transactions for all usin
 create policy "achievements_read" on public.achievements for select using (auth.role() = 'authenticated');
 create policy "achievements_write" on public.achievements for all using (public.is_admin()) with check (public.is_admin());
 
--- Audit log: append-only
-create policy "audit_insert" on public.audit_logs for insert with check (true);
+-- Audit log: append-only. Inserts are restricted to admins (or the
+-- service role, which bypasses RLS); the log is read by admins only, so
+-- letting any authenticated user write arbitrary rows would let learners
+-- forge or flood the audit trail. If client-side action logging is ever
+-- needed, do it through a security-definer function that forces
+-- user_id = auth.uid() and validates the action set.
+create policy "audit_insert" on public.audit_logs for insert with check (public.is_admin());
 create policy "audit_no_update" on public.audit_logs for update using (false);
 create policy "audit_no_delete" on public.audit_logs for delete using (false);
 create policy "audit_read_admin" on public.audit_logs for select using (public.is_admin());

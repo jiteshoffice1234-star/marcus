@@ -72,11 +72,11 @@ class _ScenarioCard extends StatelessWidget {
                     width: 44,
                     height: 44,
                     decoration: BoxDecoration(
-                      color: AppColors.indigo500.withValues(alpha: 0.12),
+                      color: AppColors.green600.withValues(alpha: 0.12),
                       borderRadius: BorderRadius.circular(AppSpacing.radiusMd),
                     ),
                     child: const Icon(Icons.apartment_rounded,
-                        color: AppColors.indigo600),
+                        color: AppColors.green700),
                   ),
                   const SizedBox(width: AppSpacing.md),
                   Expanded(

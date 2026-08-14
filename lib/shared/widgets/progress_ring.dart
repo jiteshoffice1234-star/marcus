@@ -10,7 +10,7 @@ class ProgressRing extends StatelessWidget {
     required this.child,
     this.size = 96,
     this.strokeWidth = 8,
-    this.color = AppColors.indigo500,
+    this.color = AppColors.green500,
     this.trackColor,
   }) : assert(progress >= 0 && progress <= 1);
 

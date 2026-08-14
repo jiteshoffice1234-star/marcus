@@ -204,7 +204,12 @@ class _TransactionView extends StatelessWidget {
                 children: [
                   Text('Record the journal entry', style: AppTypography.subtitle),
                   const SizedBox(height: AppSpacing.md),
-                  JournalEntryEditor(onChanged: onEntryChanged),
+                  // Fresh editor per transaction: its line state must not
+                  // carry from the previous transaction into the next.
+                  JournalEntryEditor(
+                    key: ValueKey(step),
+                    onChanged: onEntryChanged,
+                  ),
                   const SizedBox(height: AppSpacing.lg),
                   if (lastCheck != null && !accepted)
                     _FeedbackPanel(check: lastCheck!),
@@ -438,8 +443,8 @@ class _StatementCard extends StatelessWidget {
               const SizedBox(height: AppSpacing.lg),
               Text(
                 body,
-                style: AppTypography.bodySmall.copyWith(
-                  fontFamily: 'monospace',
+                style: AppTypography.figures.copyWith(
+                  fontSize: 12.5,
                   height: 1.6,
                 ),
               ),
@@ -477,7 +482,8 @@ class _LedgerView extends StatelessWidget {
                         ),
                         Text(
                           'Balance: ${formatIndian(account.balance)}',
-                          style: AppTypography.caption.copyWith(
+                          style: AppTypography.figures.copyWith(
+                            fontSize: 12.5,
                             color: account.balance >= Decimal.zero
                                 ? AppColors.emerald
                                 : AppColors.coral,
@@ -489,7 +495,7 @@ class _LedgerView extends StatelessWidget {
                     for (final line in account.lines)
                       Text(
                         '  ${line.isDebit ? 'Dr' : 'Cr'}  ${formatIndian(line.amount)}',
-                        style: AppTypography.caption,
+                        style: AppTypography.figures.copyWith(fontSize: 12.5),
                       ),
                   ],
                 ),

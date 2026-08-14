@@ -207,7 +207,7 @@ class _JourneyCard extends StatelessWidget {
                       if (nextRank != null)
                         Text(
                           '$xp XP · ${nextRank!.minXp - xp} XP to ${nextRank!.title}',
-                          style: AppTypography.caption,
+                          style: AppTypography.figures.copyWith(fontSize: 12),
                         ),
                     ],
                   ),
